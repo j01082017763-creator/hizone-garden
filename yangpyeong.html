@@ -32,8 +32,171 @@
 
   </div>
 </header><main class="flex flex-col relative w-full pt-20 pb-24 bg-[#F4F8F5]"><div class="flex flex-col w-full">
-<div id="hero"></div><!-- 1. HERO SECTION -->
-<section class="relative px-gutter-mobile pt-4 pb-6"><div class="relative overflow-hidden rounded-3xl shadow-[0_15px_35px_rgba(10,50,35,0.18)] border border-[#0F4A36]/15 bg-[#0A3222]"><img alt="양평 지상천국 스마트팜 대형 유리온실 아침 전경" class="w-full h-[490px] object-cover scale-100 transition-transform duration-1000" src="assets/images/hero-greenhouse.png"/><div class="absolute inset-0 bg-gradient-to-t from-[#051C13]/95 via-[#0A3222]/55 to-black/20"></div><div class="absolute inset-0 flex flex-col justify-end p-5 text-white"><div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-[#FFF8E7]/90 backdrop-blur-md text-[#8C6818] border border-[#E8CE88]/60 text-[11px] font-bold shadow-sm tracking-wide"><img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-5 h-5 object-contain rounded-full shadow-xs"/><span>양평 궁을행복요양원 부지 실증 마스터플랜</span></div><h1 class="mt-3 font-serif-luxury text-[31px] text-[#F9FCFA] tracking-tight leading-[1.28] font-bold drop-shadow-sm">지상천국(地上天國),<br/><span class="text-[#ECC76A]">양평 대지</span> 위에 짓다</h1><p class="mt-2 text-[13px] text-[#E0EBE4] leading-relaxed opacity-95 font-normal">요양원 유휴 부지의 역사적 환원 — 첨단 6차 스마트팜과 영성 치유, 노소 상생이 융합된 전국 최초의 지속가능 자립 공동체 모델.</p><div class="grid grid-cols-3 gap-2 mt-4 pt-3.5 border-t border-white/20 backdrop-blur-xs"><div class="flex flex-col bg-white/10 rounded-xl p-2.5 backdrop-blur-md border border-white/15"><span class="text-[10px] text-[#A5DFC2] font-semibold uppercase tracking-wider">실측 확정 대지</span><span class="font-serif-luxury text-[17px] text-[#FFF8E7] font-bold mt-0.5">3,471평</span><span class="text-[10px] text-white/70 mt-0.5 font-light">11,476.7㎡</span></div><div class="flex flex-col bg-white/10 rounded-xl p-2.5 backdrop-blur-md border border-white/15"><span class="text-[10px] text-[#ECC76A] font-semibold uppercase tracking-wider">스마트 온실</span><span class="font-serif-luxury text-[17px] text-[#FFF8E7] font-bold mt-0.5">2,000평</span><span class="text-[10px] text-white/70 mt-0.5 font-light">수경+아쿠아포닉스</span></div><div class="flex flex-col bg-white/10 rounded-xl p-2.5 backdrop-blur-md border border-white/15"><span class="text-[10px] text-[#A5DFC2] font-semibold uppercase tracking-wider">공사비 절감</span><span class="font-serif-luxury text-[17px] text-[#ECC76A] font-bold mt-0.5">42%↓</span><span class="text-[10px] text-white/70 mt-0.5 font-light">본관 골조 100% 재생</span></div></div><a class="mt-4 w-full flex items-center justify-center gap-2 min-h-[50px] py-3 px-5 rounded-2xl luxury-gold-gradient text-[#241a00] text-[14px] font-bold shadow-[0_6px_20px_rgba(197,160,89,0.35)] active:scale-98 transition-all border border-[#FFE7A3]/50 hover:brightness-105" href="#executive-inquiry"><span class="material-symbols-outlined text-[19px]">picture_as_pdf</span><span>이사회 보고서 및 사업제안서 열람 (요약본)</span></a></div></div></section>
+<div id="hero"></div>
+<!-- 1. HERO SECTION WITH 10-SLIDE CINEMATIC SIMULATION AUTO CAROUSEL -->
+<section class="relative px-gutter-mobile pt-3 pb-5" id="hero">
+  <div class="relative overflow-hidden rounded-3xl shadow-[0_20px_50px_rgba(10,50,35,0.22)] border border-[#0F4A36]/20 bg-[#051C13] h-[580px] sm:h-[620px] md:h-[660px]">
+    
+    <!-- Slide 1: Simulation Scenario 1 -->
+    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 z-10" data-index="0">
+      <img src="assets/images/sim-slide-1.jpg" alt="양평 지상락원 시뮬레이션 1" class="w-full h-full object-cover scale-100 animate-kenburns"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#041a12]/95 via-[#0A2E20]/50 to-black/30"></div>
+    </div>
+
+    <!-- Slide 2: Simulation Scenario 2 -->
+    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0 pointer-events-none" data-index="1">
+      <img src="assets/images/sim-slide-2.jpg" alt="양평 지상락원 시뮬레이션 2" class="w-full h-full object-cover scale-100 "/>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#041a12]/95 via-[#0A2E20]/50 to-black/30"></div>
+    </div>
+
+    <!-- Slide 3: Simulation Scenario 3 -->
+    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0 pointer-events-none" data-index="2">
+      <img src="assets/images/sim-slide-3.jpg" alt="양평 지상락원 시뮬레이션 3" class="w-full h-full object-cover scale-100 "/>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#041a12]/95 via-[#0A2E20]/50 to-black/30"></div>
+    </div>
+
+    <!-- Slide 4: Simulation Scenario 4 -->
+    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0 pointer-events-none" data-index="3">
+      <img src="assets/images/sim-slide-4.jpg" alt="양평 지상락원 시뮬레이션 4" class="w-full h-full object-cover scale-100 "/>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#041a12]/95 via-[#0A2E20]/50 to-black/30"></div>
+    </div>
+
+    <!-- Slide 5: Simulation Scenario 5 -->
+    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0 pointer-events-none" data-index="4">
+      <img src="assets/images/sim-slide-5.jpg" alt="양평 지상락원 시뮬레이션 5" class="w-full h-full object-cover scale-100 "/>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#041a12]/95 via-[#0A2E20]/50 to-black/30"></div>
+    </div>
+
+    <!-- Slide 6: Simulation Scenario 6 -->
+    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0 pointer-events-none" data-index="5">
+      <img src="assets/images/sim-slide-6.jpg" alt="양평 지상락원 시뮬레이션 6" class="w-full h-full object-cover scale-100 "/>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#041a12]/95 via-[#0A2E20]/50 to-black/30"></div>
+    </div>
+
+    <!-- Slide 7: Simulation Scenario 7 -->
+    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0 pointer-events-none" data-index="6">
+      <img src="assets/images/sim-slide-7.jpg" alt="양평 지상락원 시뮬레이션 7" class="w-full h-full object-cover scale-100 "/>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#041a12]/95 via-[#0A2E20]/50 to-black/30"></div>
+    </div>
+
+    <!-- Slide 8: Simulation Scenario 8 -->
+    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0 pointer-events-none" data-index="7">
+      <img src="assets/images/sim-slide-8.jpg" alt="양평 지상락원 시뮬레이션 8" class="w-full h-full object-cover scale-100 "/>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#041a12]/95 via-[#0A2E20]/50 to-black/30"></div>
+    </div>
+
+    <!-- Slide 9: Simulation Scenario 9 -->
+    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0 pointer-events-none" data-index="8">
+      <img src="assets/images/sim-slide-9.jpg" alt="양평 지상락원 시뮬레이션 9" class="w-full h-full object-cover scale-100 "/>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#041a12]/95 via-[#0A2E20]/50 to-black/30"></div>
+    </div>
+
+    <!-- Slide 10: Simulation Scenario 10 -->
+    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0 pointer-events-none" data-index="9">
+      <img src="assets/images/sim-slide-10.jpg" alt="양평 지상락원 시뮬레이션 10" class="w-full h-full object-cover scale-100 "/>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#041a12]/95 via-[#0A2E20]/50 to-black/30"></div>
+    </div>
+
+    <!-- Top Badge (Current Slide / Category) -->
+    <div class="absolute top-4 right-4 z-30 bg-black/65 backdrop-blur-md px-3.5 py-1.5 rounded-full text-white text-[11px] sm:text-[12px] font-bold border border-white/20 flex items-center gap-2 shadow-lg">
+      <span class="w-2 h-2 rounded-full bg-[#ECC76A] animate-pulse"></span>
+      <span id="hero-slide-badge" class="tracking-wide">01 / 10 · 마스터플랜 조감도</span>
+    </div>
+
+    <!-- Play / Pause Button Top Left -->
+    <div class="absolute top-4 left-4 z-30 flex items-center gap-2">
+      <button id="hero-play-pause-btn" onclick="toggleHeroAutoPlay()" class="w-8 h-8 rounded-full bg-black/50 hover:bg-black/80 backdrop-blur-md text-white border border-white/20 flex items-center justify-center transition-all" title="자동 재생 / 일시 정지">
+        <span class="material-symbols-outlined text-[17px]" id="hero-play-pause-icon">pause</span>
+      </button>
+      <div class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/50 backdrop-blur-md text-white/90 text-[11px] font-medium border border-white/15">
+        <span class="material-symbols-outlined text-[14px] text-[#ECC76A]">auto_awesome</span>
+        <span>미래 실증 10대 시나리오</span>
+      </div>
+    </div>
+
+    <!-- Slider Navigation Buttons (Prev / Next) -->
+    <button onclick="changeHeroSlide(-1)" class="absolute left-3 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-black/45 hover:bg-black/80 backdrop-blur-md text-white border border-white/25 flex items-center justify-center transition-all active:scale-90 shadow-lg" aria-label="이전 슬라이드">
+      <span class="material-symbols-outlined text-[24px]">chevron_left</span>
+    </button>
+    <button onclick="changeHeroSlide(1)" class="absolute right-3 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-black/45 hover:bg-black/80 backdrop-blur-md text-white border border-white/25 flex items-center justify-center transition-all active:scale-90 shadow-lg" aria-label="다음 슬라이드">
+      <span class="material-symbols-outlined text-[24px]">chevron_right</span>
+    </button>
+
+    <!-- Overlay Content (Dynamic Text based on current slide) -->
+    <div class="absolute inset-0 z-20 flex flex-col justify-end p-4 sm:p-7 md:p-9 text-white pointer-events-auto">
+      
+      <!-- Cheondoism Certified Badge with Authentic Gungul Emblem -->
+      <div class="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-[#FFF8E7]/95 backdrop-blur-md text-[#8C6818] border border-[#E8CE88] text-[11px] sm:text-[12px] font-bold shadow-md tracking-wide">
+        <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-4 h-4 object-contain rounded-full"/>
+        <span id="hero-caption-phase">미래 실증 시뮬레이션 01</span>
+      </div>
+
+      <!-- Dynamic Headline with Smooth Transition -->
+      <h1 id="hero-caption-title" class="mt-2.5 font-serif-luxury text-[22px] sm:text-[30px] md:text-[36px] text-[#F9FCFA] tracking-tight leading-[1.28] font-bold drop-shadow-md min-h-[56px] sm:min-h-[76px] transition-all duration-500">
+        3,471평 자연 속 미래형 스마트 생태자립마을
+      </h1>
+
+      <!-- Dynamic Story Description -->
+      <p id="hero-caption-desc" class="mt-1 text-[12px] sm:text-[14px] md:text-[15px] text-[#E0EBE4] max-w-2xl leading-relaxed opacity-95 min-h-[38px] sm:min-h-[42px] transition-all duration-500">
+        양평 지평면 11,476㎡ 부지에 첨단 스마트 온실, 웰니스 센터, 생태 정원이 유기적으로 결합된 지상천국 마스터플랜입니다.
+      </p>
+
+      <!-- Dynamic Highlight Tag -->
+      <div id="hero-caption-tag" class="mt-1.5 inline-flex items-center gap-1.5 text-[11px] sm:text-[12px] text-[#ECC76A] font-semibold bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-lg border border-[#ECC76A]/30 self-start transition-all duration-500">
+        <span class="material-symbols-outlined text-[14px]">verified</span>
+        <span id="hero-caption-tag-text">부지 3,471평 확정 · 스마트온실 2,000평 · 골조 100% 재생</span>
+      </div>
+
+      <!-- 3 Metrics Cards -->
+      <div class="grid grid-cols-3 gap-2 sm:gap-3 mt-3 pt-2.5 border-t border-white/20 backdrop-blur-xs max-w-2xl">
+        <div class="flex flex-col bg-white/10 rounded-xl sm:rounded-2xl p-2 sm:p-3 backdrop-blur-md border border-white/15">
+          <span class="text-[9.5px] sm:text-[11px] text-[#A5DFC2] font-semibold uppercase tracking-wider">실측 확정 대지</span>
+          <span class="font-serif-luxury text-[16px] sm:text-[20px] text-[#FFF8E7] font-bold mt-0.5">3,471평</span>
+          <span class="text-[9.5px] text-white/70 mt-0.5">11,476.7 ㎡</span>
+        </div>
+        <div class="flex flex-col bg-white/10 rounded-xl sm:rounded-2xl p-2 sm:p-3 backdrop-blur-md border border-white/15">
+          <span class="text-[9.5px] sm:text-[11px] text-[#ECC76A] font-semibold uppercase tracking-wider">스마트 온실</span>
+          <span class="font-serif-luxury text-[16px] sm:text-[20px] text-[#FFF8E7] font-bold mt-0.5">2,000평</span>
+          <span class="text-[9.5px] text-white/70 mt-0.5">수경+아쿠아포닉스</span>
+        </div>
+        <div class="flex flex-col bg-white/10 rounded-xl sm:rounded-2xl p-2 sm:p-3 backdrop-blur-md border border-white/15">
+          <span class="text-[9.5px] sm:text-[11px] text-[#A5DFC2] font-semibold uppercase tracking-wider">공사비 절감</span>
+          <span class="font-serif-luxury text-[16px] sm:text-[20px] text-[#ECC76A] font-bold mt-0.5">42%↓</span>
+          <span class="text-[9.5px] text-white/70 mt-0.5">본관 골조 100% 재생</span>
+        </div>
+      </div>
+
+      <!-- Action Buttons & 10-Dot Indicators in 1 row -->
+      <div class="mt-3.5 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-2 w-full sm:w-auto">
+          <button onclick="openProposalModal()" class="flex-1 sm:flex-initial flex items-center justify-center gap-2 min-h-[44px] py-2 px-4 sm:px-5 rounded-xl luxury-gold-gradient text-[#241a00] text-[13px] sm:text-[13.5px] font-bold shadow-[0_4px_20px_rgba(197,160,89,0.35)] active:scale-95 transition-all border border-[#FFE7A3]">
+            <span class="material-symbols-outlined text-[17px]">picture_as_pdf</span>
+            <span>제안서 열람 (요약본)</span>
+          </button>
+          <a href="#survey" class="flex-1 sm:flex-initial flex items-center justify-center gap-1.5 min-h-[44px] py-2 px-3.5 sm:px-4 rounded-xl bg-white/15 hover:bg-white/25 text-white text-[12.5px] sm:text-[13px] font-semibold backdrop-blur-md border border-white/20 active:scale-95 transition-all">
+            <span class="material-symbols-outlined text-[17px]">map</span>
+            <span>지적 실측 3종</span>
+          </a>
+        </div>
+
+        <!-- 10 Carousel Dot Indicators -->
+        <div class="flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-black/45 backdrop-blur-md border border-white/15 self-center">
+          <button onclick="goToHeroSlide(0)" class="hero-dot w-5 h-2 rounded-full bg-[#ECC76A] transition-all duration-300" aria-label="1번 슬라이드" title="1번 시나리오"></button>
+          <button onclick="goToHeroSlide(1)" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300" aria-label="2번 슬라이드" title="2번 시나리오"></button>
+          <button onclick="goToHeroSlide(2)" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300" aria-label="3번 슬라이드" title="3번 시나리오"></button>
+          <button onclick="goToHeroSlide(3)" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300" aria-label="4번 슬라이드" title="4번 시나리오"></button>
+          <button onclick="goToHeroSlide(4)" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300" aria-label="5번 슬라이드" title="5번 시나리오"></button>
+          <button onclick="goToHeroSlide(5)" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300" aria-label="6번 슬라이드" title="6번 시나리오"></button>
+          <button onclick="goToHeroSlide(6)" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300" aria-label="7번 슬라이드" title="7번 시나리오"></button>
+          <button onclick="goToHeroSlide(7)" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300" aria-label="8번 슬라이드" title="8번 시나리오"></button>
+          <button onclick="goToHeroSlide(8)" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300" aria-label="9번 슬라이드" title="9번 시나리오"></button>
+          <button onclick="goToHeroSlide(9)" class="hero-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300" aria-label="10번 슬라이드" title="10번 시나리오"></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 <div id="overview"></div><!-- 2. VISION & CORE PILLARS SECTION -->
 <section class="px-gutter-mobile py-5 flex flex-col gap-3.5"><div class="flex flex-col gap-1"><div class="flex items-center gap-1.5 text-[#1B6E50]"><span class="material-symbols-outlined text-[15px]">eco</span><span class="text-[11px] font-bold tracking-[0.14em] uppercase text-[#1B6E50]">Strategic Vision</span></div><h2 class="font-serif-luxury text-[25px] font-bold text-[#0B3524] tracking-tight leading-snug">우리가 구현할<br/><span class="luxury-text-gradient">지상천국의 3대 핵심 축</span></h2><p class="text-[13.5px] text-[#42594F] leading-relaxed">자연 순환 생태계와 자립형 경제를 결합한 미래형 마스터플랜</p></div><div class="grid grid-cols-1 gap-3 mt-1.5"><div class="p-5 rounded-2xl bg-white border border-[#0F4A36]/10 luxury-card-glow transition-all hover:border-[#0F4A36]/25 flex flex-col gap-2 relative overflow-hidden"><div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[#EAF5EF] to-transparent rounded-bl-full pointer-events-none"></div><div class="flex items-center justify-between"><span class="w-8 h-8 rounded-xl bg-[#0F4A36] text-[#FFF8E7] flex items-center justify-center font-serif-luxury font-bold text-sm shadow-xs">01</span><div class="w-9 h-9 rounded-xl bg-[#EAF5EF] text-[#0F4A36] flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">diversity_3</span></div></div><h3 class="font-serif-luxury text-[17px] text-[#0B3524] font-bold mt-1">세대 상생 자립 복합 공동체</h3><p class="text-[13px] text-[#4A6357] leading-relaxed">시니어의 연륜과 청년의 첨단 IT 기술력을 융합한 자립 협동 주거 모델입니다. 요양원 본관 시설을 리모델링하여 세대 통합 교육 및 안전한 힐링 주거를 제공합니다.</p></div><div class="p-5 rounded-2xl bg-white border border-[#0F4A36]/10 luxury-card-glow transition-all hover:border-[#0F4A36]/25 flex flex-col gap-2 relative overflow-hidden"><div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[#E3F2EC] to-transparent rounded-bl-full pointer-events-none"></div><div class="flex items-center justify-between"><span class="w-8 h-8 rounded-xl bg-[#175C45] text-[#FFF8E7] flex items-center justify-center font-serif-luxury font-bold text-sm shadow-xs">02</span><div class="w-9 h-9 rounded-xl bg-[#E3F2EC] text-[#175C45] flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">precision_manufacturing</span></div></div><h3 class="font-serif-luxury text-[17px] text-[#0B3524] font-bold mt-1">첨단 6차 스마트팜 테크놀로지</h3><p class="text-[13px] text-[#4A6357] leading-relaxed">ICT 사물인터넷 정밀 환경제어, 버티컬 수경재배, 무화학 아쿠아포닉스 순환 설비로 사계절 고부가 채소를 균일하게 수확하여 재단 기금의 안정성을 확보합니다.</p></div><div class="p-5 rounded-2xl bg-white border border-[#0F4A36]/10 luxury-card-glow transition-all hover:border-[#0F4A36]/25 flex flex-col gap-2 relative overflow-hidden"><div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[#FFF8E7] to-transparent rounded-bl-full pointer-events-none"></div><div class="flex items-center justify-between"><span class="w-8 h-8 rounded-xl luxury-gold-gradient text-[#241a00] flex items-center justify-center font-serif-luxury font-bold text-sm shadow-xs">03</span><div class="w-9 h-9 rounded-xl bg-[#FFF8E7] text-[#9A7B2C] flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">local_cafe</span></div></div><h3 class="font-serif-luxury text-[17px] text-[#0B3524] font-bold mt-1">온실 치유 카페 &amp; 로컬 상생 마켓</h3><p class="text-[13px] text-[#4A6357] leading-relaxed">보태니컬 정원 카페, 팜투테이블 베이커리, 직판 로컬 마켓을 통해 도시민과 지역 주민이 찾아오는 양평의 대표 생태 랜드마크로 확장합니다.</p></div></div></section>
 <div id="survey"></div><!-- 3. SITE OVERVIEW & TOPOGRAPHY (3 VERIFIED SURVEY MAPS TABS) -->
@@ -414,6 +577,207 @@
 </div>
 <script>
   
+  
+  // --- 10-Slide Cinematic Future Simulation Carousel Controller ---
+  const heroSlideData = [
+    {
+      badge: "01 / 10 · 마스터플랜 조감도",
+      phase: "미래 실증 시뮬레이션 01",
+      title: "3,471평 자연 속 미래형 스마트 생태자립마을",
+      desc: "양평 지평면 11,476㎡ 부지에 첨단 스마트 온실, 웰니스 센터, 생태 정원이 유기적으로 결합된 지상천국 마스터플랜입니다.",
+      tag: "부지 3,471평 확정 · 스마트온실 2,000평 · 골조 100% 재생"
+    },
+    {
+      badge: "02 / 10 · 건축 재생 조감도",
+      phase: "미래 실증 시뮬레이션 02",
+      title: "기존 본관 골조(B1~3F)를 100% 보존·재생한 웰니스 센터",
+      desc: "철거 대신 튼튼한 라멘조 골조를 친환경 리모델링하여 공사비를 42% 절감하고 현대적 힐링·주거 공간으로 탈바꿈합니다.",
+      tag: "연면적 1,000평형 · 친환경 외장재 · 무장애 유니버설 디자인"
+    },
+    {
+      badge: "03 / 10 · 09:30 AM 온실 일과",
+      phase: "미래 실증 시뮬레이션 03",
+      title: "스마트 온실 AI 어그리봇과 시니어·청년 상생 파종",
+      desc: "무거운 모종·수확 운반은 AI 로봇이 보조하고, 어르신과 청년은 정밀 관리로 건강과 보람을 찾는 스마트 일자리입니다.",
+      tag: "H-AgriBot 협동 로봇 · 시니어 맞춤 일자리 · ICT 정밀 제어"
+    },
+    {
+      badge: "04 / 10 · 11:00 AM 고소득 수확",
+      phase: "미래 실증 시뮬레이션 04",
+      title: "첨단 수직 타워 고당도 프리미엄 유기농 딸기 수확",
+      desc: "사계절 균일한 환경제어로 최고 품질의 딸기와 샐러드 채소를 연중 수확하여 재단과 마을의 안정적 수익을 창출합니다.",
+      tag: "수직 버티컬 팜 · 사계절 균일 수확 · 친환경 무농약 인증"
+    },
+    {
+      badge: "05 / 10 · 12:30 PM 친환경 순환",
+      phase: "미래 실증 시뮬레이션 05",
+      title: "물고기와 채소가 상생하는 무농약 아쿠아포닉스 연구실",
+      desc: "물고기 배설물이 식물의 천연 영양분이 되고 식물이 물을 정화하는 100% 무화학 자연 순환 생태 농법을 실증합니다.",
+      tag: "무화학 비료 · 무농약 생태순환 · 90% 수자원 절약"
+    },
+    {
+      badge: "06 / 10 · 14:00 PM 여유와 소통",
+      phase: "미래 실증 시뮬레이션 06",
+      title: "보태니컬 온실 카페 & 당일 수확 팜투테이블 베이커리",
+      desc: "푸른 온실 가든 속에서 갓 수확한 신선한 채소 샐러드와 천연 발효 빵을 즐기며 주민과 방문객이 함께 교류합니다.",
+      tag: "온실 가든 베이커리 · 팜투테이블 다이닝 · 로컬 명소화"
+    },
+    {
+      badge: "07 / 10 · 15:30 PM 자연 치유 산책",
+      phase: "미래 실증 시뮬레이션 07",
+      title: "440m 황토 맨발 어싱(Earthing)길 솔숲 치유 보행",
+      desc: "소나무 숲길을 따라 붉은 황토를 맨발로 걸으며 체내 활성산소를 배출하고 자연의 생명 에너지를 충전합니다.",
+      tag: "440m 붉은 황토길 · 편백 족욕장 연계 · 활성산소 배출 치유"
+    },
+    {
+      badge: "08 / 10 · 17:00 PM 노을 팜파티",
+      phase: "미래 실증 시뮬레이션 08",
+      title: "잔디마당 유기농 팜 바비큐 & 친환경 글램핑 캠크닉",
+      desc: "황금빛 노을 아래 직접 재배한 유기농 채소와 함께 온 가족과 이웃이 도란도란 나누는 따뜻한 저녁 바비큐 파티입니다.",
+      tag: "글램핑 사파리 텐트 · 팜 바비큐 파티 · 가족 힐링 캠크닉"
+    },
+    {
+      badge: "09 / 10 · 19:00 PM 안락한 휴식",
+      phase: "미래 실증 시뮬레이션 09",
+      title: "천연 편백나무 무장애(Barrier-Free) 스마트 시니어 레지던스",
+      desc: "피톤치드 가득한 편백 원목과 실시간 스마트 헬스케어 모니터링으로 24시간 안전하고 안락한 주거를 누립니다.",
+      tag: "천연 편백 원목 · 실시간 바이탈 케어 · 100% 무장애 설계"
+    },
+    {
+      badge: "10 / 10 · 20:30 PM 심신 정화",
+      phase: "미래 실증 시뮬레이션 10",
+      title: "지하 암반수 숲 조망 온열 아쿠아 스파 & 힐링 명상",
+      desc: "양평 청정 지하 200m 천연 암반 온수 풀에서 밤 숲을 바라보며 하루의 피로를 녹이고 마음의 평온을 회복합니다.",
+      tag: "천연 암반 온수 · 파노라마 숲 조망 · 심신 이완 명상 테라피"
+    }
+  ];
+
+  let currentHeroSlide = 0;
+  const totalHeroSlides = 10;
+  let heroSlideInterval = null;
+  let isHeroAutoPlaying = true;
+
+  function updateHeroSlide(index) {
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-dot');
+    if (!slides.length) return;
+
+    currentHeroSlide = (index + totalHeroSlides) % totalHeroSlides;
+    const data = heroSlideData[currentHeroSlide];
+
+    slides.forEach((s, idx) => {
+      const img = s.querySelector('img');
+      if (idx === currentHeroSlide) {
+        s.classList.remove('opacity-0', 'pointer-events-none', 'z-0');
+        s.classList.add('opacity-100', 'z-10');
+        if (img) img.classList.add('animate-kenburns');
+      } else {
+        s.classList.remove('opacity-100', 'z-10');
+        s.classList.add('opacity-0', 'pointer-events-none', 'z-0');
+        if (img) img.classList.remove('animate-kenburns');
+      }
+    });
+
+    dots.forEach((d, idx) => {
+      if (idx === currentHeroSlide) {
+        d.classList.remove('w-2', 'bg-white/40');
+        d.classList.add('w-5', 'bg-[#ECC76A]');
+      } else {
+        d.classList.remove('w-5', 'bg-[#ECC76A]');
+        d.classList.add('w-2', 'bg-white/40');
+      }
+    });
+
+    // Update dynamic text with subtle animation
+    const badgeEl = document.getElementById('hero-slide-badge');
+    const phaseEl = document.getElementById('hero-caption-phase');
+    const titleEl = document.getElementById('hero-caption-title');
+    const descEl = document.getElementById('hero-caption-desc');
+    const tagTextEl = document.getElementById('hero-caption-tag-text');
+
+    if (badgeEl && data) badgeEl.textContent = data.badge;
+    if (phaseEl && data) phaseEl.textContent = data.phase;
+    if (titleEl && data) {
+      titleEl.style.opacity = '0.3';
+      titleEl.style.transform = 'translateY(4px)';
+      setTimeout(() => {
+        titleEl.textContent = data.title;
+        titleEl.style.opacity = '1';
+        titleEl.style.transform = 'translateY(0)';
+      }, 150);
+    }
+    if (descEl && data) {
+      descEl.style.opacity = '0.3';
+      setTimeout(() => {
+        descEl.textContent = data.desc;
+        descEl.style.opacity = '1';
+      }, 150);
+    }
+    if (tagTextEl && data) tagTextEl.textContent = data.tag;
+  }
+
+  function changeHeroSlide(direction) {
+    resetHeroTimer();
+    updateHeroSlide(currentHeroSlide + direction);
+  }
+
+  function goToHeroSlide(index) {
+    resetHeroTimer();
+    updateHeroSlide(index);
+  }
+
+  function toggleHeroAutoPlay() {
+    const icon = document.getElementById('hero-play-pause-icon');
+    if (isHeroAutoPlaying) {
+      clearInterval(heroSlideInterval);
+      heroSlideInterval = null;
+      isHeroAutoPlaying = false;
+      if (icon) icon.textContent = 'play_arrow';
+    } else {
+      startHeroTimer();
+      isHeroAutoPlaying = true;
+      if (icon) icon.textContent = 'pause';
+    }
+  }
+
+  function startHeroTimer() {
+    if (heroSlideInterval) clearInterval(heroSlideInterval);
+    heroSlideInterval = setInterval(() => {
+      updateHeroSlide(currentHeroSlide + 1);
+    }, 4500);
+    isHeroAutoPlaying = true;
+  }
+
+  function resetHeroTimer() {
+    if (isHeroAutoPlaying) {
+      startHeroTimer();
+    }
+  }
+
+  // Touch Swipe Support for Mobile
+  document.addEventListener('DOMContentLoaded', () => {
+    startHeroTimer();
+
+    const heroContainer = document.getElementById('hero');
+    if (heroContainer) {
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      heroContainer.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      heroContainer.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 40) {
+          if (diff > 0) changeHeroSlide(1); // Swipe left -> Next
+          else changeHeroSlide(-1); // Swipe right -> Prev
+        }
+      }, { passive: true });
+    }
+  });
+
   function openProposalModal() {
     const m = document.getElementById('proposal-modal');
     if (m) { m.classList.remove('hidden'); m.classList.add('flex'); }
