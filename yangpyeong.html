@@ -33,543 +33,144 @@
   </div>
 </header><main class="flex flex-col relative w-full pt-20 pb-24 bg-[#F4F8F5]"><div class="flex flex-col w-full">
 <div id="hero"></div>
-<!-- 1. HERO SECTION WITH 20-SLIDE HIGH-VISIBILITY TOUCH-SWIPE CAROUSEL -->
+<!-- 1. HERO SECTION: 100% FULL-VIEW 16:9 IMAGE SLIDER & SEPARATED EXPLANATION CARD -->
 <section class="relative px-gutter-mobile pt-3 pb-3" id="hero">
-  <!-- Viewport Container: Clean panoramic height -->
-  <div class="relative overflow-hidden rounded-3xl shadow-[0_20px_50px_rgba(10,50,35,0.22)] border border-[#0F4A36]/20 bg-[#051C13] h-[480px] sm:h-[540px] md:h-[580px]">
+  
+  <!-- Viewport Container: Pure 16:9 Aspect Ratio with ZERO text blockage -->
+  <div class="relative overflow-hidden rounded-3xl shadow-[0_20px_50px_rgba(10,50,35,0.18)] border border-[#0F4A36]/20 bg-black aspect-[16/9] w-full">
     
     <!-- Swipeable Horizontal Track -->
     <div id="hero-slider-track" class="flex h-full w-full cursor-grab active:cursor-grabbing will-change-transform select-none" style="transform: translateX(0%);">
 
         <!-- Slide 1: 3,471평 자연 속 미래형 스마트 생태자립마을 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="0">
-          <img src="assets/images/sim-slide-1.jpg" alt="3,471평 자연 속 미래형 스마트 생태자립마을" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 75%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>AI 미래 실증 01</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">부지 3,471평 확정 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                3,471평 자연 속 미래형 스마트 생태자립마을
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                양평 지평면 11,476㎡ 부지에 첨단 스마트 온실, 웰니스 센터, 생태 정원이 유기적으로 결합된 지상천국 전체 조감도
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="0">
+          <img src="assets/images/sim-slide-1.jpg" alt="3,471평 자연 속 미래형 스마트 생태자립마을" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 2: 스마트 온실 AI 어그리봇과 세대 상생 파종 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="1">
-          <img src="assets/images/sim-slide-3.jpg" alt="스마트 온실 AI 어그리봇과 세대 상생 파종" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>AI 미래 실증 02</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">H-AgriBot 협동 로봇 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                스마트 온실 AI 어그리봇과 세대 상생 파종
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                무거운 모종·수확 운반은 AI 로봇이 보조하고, 어르신과 청년이 함께 건강과 보람을 찾는 스마트 일자리 현장
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="1">
+          <img src="assets/images/sim-slide-3.jpg" alt="스마트 온실 AI 어그리봇과 세대 상생 파종" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 3: AI 협동 로봇 &amp; 세대 상생 온실 실물 모델 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="2">
-          <img src="assets/images/tech-robot.png" alt="AI 협동 로봇 &amp; 세대 상생 온실 실물 모델" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>스마트팜 모델 01</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">자율 방제 및 운반 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                AI 협동 로봇 &amp; 세대 상생 온실 실물 모델
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                세대 통합 스마트 온실에서 AI 로봇과 시니어가 협업하여 안전하고 무리 없는 친환경 농작업 실현
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="2">
+          <img src="assets/images/tech-robot.png" alt="AI 협동 로봇 &amp; 세대 상생 온실 실물 모델" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 4: 첨단 수직 타워 고당도 프리미엄 딸기 수확 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="3">
-          <img src="assets/images/sim-slide-4.jpg" alt="첨단 수직 타워 고당도 프리미엄 딸기 수확" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>AI 미래 실증 03</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">수직 버티컬 팜 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                첨단 수직 타워 고당도 프리미엄 딸기 수확
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                사계절 균일한 환경제어로 최고 품질의 딸기와 샐러드 채소를 연중 수확하여 재단과 마을의 안정적 고수익 창출
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="3">
+          <img src="assets/images/sim-slide-4.jpg" alt="첨단 수직 타워 고당도 프리미엄 딸기 수확" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 5: 버티컬 타워 &amp; 사계절 고당도 딸기 실물 설비 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="4">
-          <img src="assets/images/tech-tower.png" alt="버티컬 타워 &amp; 사계절 고당도 딸기 실물 설비" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>스마트팜 모델 02</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">단위면적당 생산량 5배 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                버티컬 타워 &amp; 사계절 고당도 딸기 실물 설비
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                수직 재배 타워에서 청년과 어르신이 함께 수확하는 노소 상생 스마트 농업 실증 설비
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="4">
+          <img src="assets/images/tech-tower.png" alt="버티컬 타워 &amp; 사계절 고당도 딸기 실물 설비" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 6: 물고기와 식물이 상생하는 아쿠아포닉스 연구실 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="5">
-          <img src="assets/images/sim-slide-5.jpg" alt="물고기와 식물이 상생하는 아쿠아포닉스 연구실" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>AI 미래 실증 04</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">무화학 비료 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                물고기와 식물이 상생하는 아쿠아포닉스 연구실
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                담수어 배설물이 식물의 천연 영양분이 되고 식물이 물을 정화하는 100% 무화학 자연 순환 생태 농법 실증
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="5">
+          <img src="assets/images/sim-slide-5.jpg" alt="물고기와 식물이 상생하는 아쿠아포닉스 연구실" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 7: 생태 아쿠아포닉스 유기 순환 설비 실증 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="6">
-          <img src="assets/images/tech-aquaponics.png" alt="생태 아쿠아포닉스 유기 순환 설비 실증" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>스마트팜 모델 03</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">생태 순환 농업 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                생태 아쿠아포닉스 유기 순환 설비 실증
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                담수어 수조와 상부 채소 베드가 결합된 친환경 무농약 순환 설비 실물 모델
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="6">
+          <img src="assets/images/tech-aquaponics.png" alt="생태 아쿠아포닉스 유기 순환 설비 실증" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 8: 양평 산세 속 2,000평 스마트 유리온실 팰리스 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="7">
-          <img src="assets/images/hero-greenhouse.png" alt="양평 산세 속 2,000평 스마트 유리온실 팰리스" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 75%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>온실 인프라 01</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">2,000평 첨단 온실 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                양평 산세 속 2,000평 스마트 유리온실 팰리스
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                지평면 청정 자연과 어우러진 웅장한 유리온실에서 연중 푸른 생명과 건강한 먹거리를 생산
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="7">
+          <img src="assets/images/hero-greenhouse.png" alt="양평 산세 속 2,000평 스마트 유리온실 팰리스" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 9: AI 생육 진단 &amp; 스마트팜 원격 모니터링 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="8">
-          <img src="assets/images/tech-monitoring.png" alt="AI 생육 진단 &amp; 스마트팜 원격 모니터링" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>스마트팜 모델 04</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">ICT 사물인터넷 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                AI 생육 진단 &amp; 스마트팜 원격 모니터링
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                온습도, 일조량, CO2, 양액을 24시간 실시간 진단하고 최적 생육 환경을 자동 제어하는 클라우드 관제 센터
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="8">
+          <img src="assets/images/tech-monitoring.png" alt="AI 생육 진단 &amp; 스마트팜 원격 모니터링" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 10: 기존 본관 골조(B1~3F)를 100% 재생한 웰니스 센터 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="9">
-          <img src="assets/images/sim-slide-2.jpg" alt="기존 본관 골조(B1~3F)를 100% 재생한 웰니스 센터" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 75%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>건축 재생 01</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">골조 100% 재활용 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                기존 본관 골조(B1~3F)를 100% 재생한 웰니스 센터
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                튼튼한 라멘조 골조를 친환경 리모델링하여 공사비 42%를 절감하고 현대적 힐링 공간으로 완공한 조감도
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="9">
+          <img src="assets/images/sim-slide-2.jpg" alt="기존 본관 골조(B1~3F)를 100% 재생한 웰니스 센터" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 11: 천연 음이온 산소 힐링 라운지 회랑 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="10">
-          <img src="assets/images/wellness-hallway.png" alt="천연 음이온 산소 힐링 라운지 회랑" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>요양원 재생 01</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">실내 식물 벽면녹화 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                천연 음이온 산소 힐링 라운지 회랑
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                식물 바이오월 회랑과 수경 폭포 휴게 라운지로 본관 내부를 사계절 산소 숲으로 탈바꿈
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="10">
+          <img src="assets/images/wellness-hallway.png" alt="천연 음이온 산소 힐링 라운지 회랑" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 12: 천연 편백나무 무장애 스마트 시니어 레지던스 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="11">
-          <img src="assets/images/sim-slide-9.jpg" alt="천연 편백나무 무장애 스마트 시니어 레지던스" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>시니어 주거 01</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">천연 편백 원목 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                천연 편백나무 무장애 스마트 시니어 레지던스
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                피톤치드 가득한 편백 원목과 실시간 헬스케어 모니터링으로 24시간 안전하고 안락한 품격 주거
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="11">
+          <img src="assets/images/sim-slide-9.jpg" alt="천연 편백나무 무장애 스마트 시니어 레지던스" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 13: 친환경 원목 맞춤형 시니어 주거 유닛 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="12">
-          <img src="assets/images/wellness-room.png" alt="친환경 원목 맞춤형 시니어 주거 유닛" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>요양원 재생 02</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">1인 맞춤형 힐링 주거 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                친환경 원목 맞춤형 시니어 주거 유닛
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                햇살 가득한 채광창과 편안한 1인 맞춤형 원목 인테리어로 안락한 독립 생활 보장
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="12">
+          <img src="assets/images/wellness-room.png" alt="친환경 원목 맞춤형 시니어 주거 유닛" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 14: 지하 암반수 숲 조망 온열 아쿠아 스파 &amp; 명상 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="13">
-          <img src="assets/images/sim-slide-10.jpg" alt="지하 암반수 숲 조망 온열 아쿠아 스파 &amp; 명상" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>웰니스 힐링 01</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">천연 암반 온수 풀 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                지하 암반수 숲 조망 온열 아쿠아 스파 &amp; 명상
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                양평 청정 지하 200m 천연 암반 온수 풀에서 밤 숲을 조망하며 하루의 피로를 녹이는 명상 테라피
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="13">
+          <img src="assets/images/sim-slide-10.jpg" alt="지하 암반수 숲 조망 온열 아쿠아 스파 &amp; 명상" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 15: 사계절 소나무 숲을 품은 아쿠아 테라피 통창 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="14">
-          <img src="assets/images/wellness-spa.png" alt="사계절 소나무 숲을 품은 아쿠아 테라피 통창" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>요양원 재생 03</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">사계절 산림욕 통창 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                사계절 소나무 숲을 품은 아쿠아 테라피 통창
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                청정 산림욕 통창 뷰와 피톤치드 아쿠아 테라피 복도가 어우러진 실내 온천 힐링 라운지
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="14">
+          <img src="assets/images/wellness-spa.png" alt="사계절 소나무 숲을 품은 아쿠아 테라피 통창" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 16: 잔디마당 유기농 팜 바비큐 &amp; 글램핑 캠크닉 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="15">
-          <img src="assets/images/sim-slide-8.jpg" alt="잔디마당 유기농 팜 바비큐 &amp; 글램핑 캠크닉" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>야외 힐링 01</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">글램핑 사파리 텐트 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                잔디마당 유기농 팜 바비큐 &amp; 글램핑 캠크닉
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                황금빛 노을 아래 갓 수확한 유기농 채소와 함께 온 가족과 이웃이 나누는 따뜻한 저녁 바비큐 파티
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="15">
+          <img src="assets/images/sim-slide-8.jpg" alt="잔디마당 유기농 팜 바비큐 &amp; 글램핑 캠크닉" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 17: 유기농 바비큐 &amp; 친환경 글램핑 캠프 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="16">
-          <img src="assets/images/nature-bbq.png" alt="유기농 바비큐 &amp; 친환경 글램핑 캠프" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>야외 레저 01</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">3대 가족 캠크닉 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                유기농 바비큐 &amp; 친환경 글램핑 캠프
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                3대 가족이 함께 모여 온실 유기농 채소와 바비큐를 즐기는 행복한 주말 가든 파티 실황
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="16">
+          <img src="assets/images/nature-bbq.png" alt="유기농 바비큐 &amp; 친환경 글램핑 캠프" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 18: 440m 황토 맨발 어싱(Earthing)길 솔숲 치유 보행 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="17">
-          <img src="assets/images/sim-slide-7.jpg" alt="440m 황토 맨발 어싱(Earthing)길 솔숲 치유 보행" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>야외 힐링 02</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">440m 붉은 황토길 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                440m 황토 맨발 어싱(Earthing)길 솔숲 치유 보행
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                소나무 숲길을 따라 붉은 황토를 맨발로 걸으며 체내 활성산소를 배출하고 자연 생명력 충전
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="17">
+          <img src="assets/images/sim-slide-7.jpg" alt="440m 황토 맨발 어싱(Earthing)길 솔숲 치유 보행" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 19: 400m 순환 맨발 어싱(Earthing) 솔숲 치유길 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="18">
-          <img src="assets/images/nature-earthing.png" alt="400m 순환 맨발 어싱(Earthing) 솔숲 치유길" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>야외 레저 02</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">순환형 산책 동선 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                400m 순환 맨발 어싱(Earthing) 솔숲 치유길
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                양평 잣나무 숲과 연꽃 연못을 잇는 맨발 힐링 황톳길을 따라 어르신들이 건강하게 산책하는 모습
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="18">
+          <img src="assets/images/nature-earthing.png" alt="400m 순환 맨발 어싱(Earthing) 솔숲 치유길" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
 
         <!-- Slide 20: 어린이와 함께하는 잔디마당 자연 놀이터 -->
-        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none" data-index="19">
-          <img src="assets/images/nature-lawn.png" alt="어린이와 함께하는 잔디마당 자연 놀이터" class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-700" style="object-position: center 85%; transform: translateY(-7%) scale(1.12);" draggable="false"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
-          
-          <!-- Slim Floating Glass Caption (Compact at bottom left, does NOT block the upper/middle image) -->
-          <div class="absolute bottom-4 left-3 right-3 sm:left-6 sm:right-auto sm:max-w-xl z-20 pointer-events-none">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/65 backdrop-blur-md border border-white/20 shadow-2xl text-white">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFF8E7] text-[#8C6818] text-[10px] sm:text-[11px] font-bold shadow-xs">
-                  <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3 h-3 object-contain rounded-full"/>
-                  <span>야외 레저 03</span>
-                </span>
-                <span class="text-[10.5px] text-[#ECC76A] font-semibold">천연 잔디마당 </span>
-              </div>
-              <h2 class="mt-1.5 font-serif-luxury text-[17px] sm:text-[22px] md:text-[24px] text-[#F9FCFA] font-bold leading-tight tracking-tight drop-shadow-sm">
-                어린이와 함께하는 잔디마당 자연 놀이터
-              </h2>
-              <p class="mt-1 text-[11.5px] sm:text-[13px] text-[#E0EBE4] leading-relaxed line-clamp-2 sm:line-clamp-none opacity-95">
-                넓은 천연 잔디밭에서 아이들과 어르신이 자연을 체험하며 어우러지는 주말 팜스테이 & 캠크닉 생태 놀이 공간
-              </p>
-            </div>
-          </div>
+        <div class="hero-slide flex-shrink-0 w-full h-full relative overflow-hidden select-none bg-black flex items-center justify-center" data-index="19">
+          <img src="assets/images/nature-lawn.png" alt="어린이와 함께하는 잔디마당 자연 놀이터" class="w-full h-full object-contain sm:object-cover select-none pointer-events-none" draggable="false"/>
         </div>
     </div>
 
-    <!-- Fixed Overlay Top Left: Play/Pause Toggle & Swipe Hint -->
-    <div class="absolute top-4 left-4 z-30 flex items-center gap-2 pointer-events-auto">
-      <button id="hero-play-pause-btn" onclick="toggleHeroAutoPlay()" class="w-8 h-8 rounded-full bg-black/60 hover:bg-black/90 backdrop-blur-md text-white border border-white/25 flex items-center justify-center transition-all shadow-md active:scale-95" title="자동 넘김 재생 / 정지">
-        <span class="material-symbols-outlined text-[17px]" id="hero-play-pause-icon">pause</span>
+    <!-- Fixed Overlay Top Left: Play/Pause & Swipe Hint -->
+    <div class="absolute top-3 left-3 sm:top-4 sm:left-4 z-30 flex items-center gap-1.5 sm:gap-2 pointer-events-auto">
+      <button id="hero-play-pause-btn" onclick="toggleHeroAutoPlay()" class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-black/60 hover:bg-black/90 backdrop-blur-md text-white border border-white/25 flex items-center justify-center transition-all shadow-md active:scale-95" title="자동 넘김 재생 / 정지">
+        <span class="material-symbols-outlined text-[15px] sm:text-[17px]" id="hero-play-pause-icon">pause</span>
       </button>
-      <div class="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-white/95 text-[10.5px] sm:text-[11px] font-semibold border border-white/20 shadow-md">
-        <span class="material-symbols-outlined text-[13px] text-[#ECC76A] animate-pulse">swipe</span>
-        <span class="hidden sm:inline">손가락으로 좌우 밀기(Swipe) / 클릭 이동</span>
-        <span class="sm:hidden">좌우 밀어 넘기기</span>
+      <div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-white/95 text-[10px] sm:text-[11px] font-semibold border border-white/20 shadow-md">
+        <span class="material-symbols-outlined text-[12px] sm:text-[13px] text-[#ECC76A] animate-pulse">swipe</span>
+        <span>손가락으로 좌우 밀기</span>
       </div>
     </div>
 
-    <!-- Fixed Overlay Top Right: Category & Counter Badge (01 / 20) -->
-    <div class="absolute top-4 right-4 z-30 bg-black/70 backdrop-blur-md px-3 sm:px-3.5 py-1.5 rounded-full text-white text-[11px] sm:text-[12px] font-bold border border-white/25 flex items-center gap-2 shadow-lg pointer-events-auto">
+    <!-- Fixed Overlay Top Right: Counter Badge -->
+    <div class="absolute top-3 right-3 sm:top-4 sm:right-4 z-30 bg-black/70 backdrop-blur-md px-2.5 sm:px-3 py-1 rounded-full text-white text-[10.5px] sm:text-[12px] font-bold border border-white/25 flex items-center gap-1.5 shadow-lg pointer-events-auto">
       <span class="w-2 h-2 rounded-full bg-[#ECC76A] animate-pulse"></span>
-      <span id="hero-slide-badge" class="tracking-wide">01 / 20 · 미래 실증 마스터플랜</span>
+      <span id="hero-slide-badge" class="tracking-wide">01 / 20</span>
     </div>
 
     <!-- Fixed Overlay Side Nav Buttons (Prev / Next) -->
-    <button onclick="changeHeroSlide(-1)" class="absolute left-2.5 sm:left-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/50 hover:bg-black/85 backdrop-blur-md text-white border border-white/25 flex items-center justify-center transition-all active:scale-90 shadow-xl pointer-events-auto" aria-label="이전 슬라이드">
-      <span class="material-symbols-outlined text-[24px]">chevron_left</span>
+    <button onclick="changeHeroSlide(-1)" class="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/50 hover:bg-black/85 backdrop-blur-md text-white border border-white/25 flex items-center justify-center transition-all active:scale-90 shadow-xl pointer-events-auto" aria-label="이전 슬라이드">
+      <span class="material-symbols-outlined text-[20px] sm:text-[24px]">chevron_left</span>
     </button>
-    <button onclick="changeHeroSlide(1)" class="absolute right-2.5 sm:right-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/50 hover:bg-black/85 backdrop-blur-md text-white border border-white/25 flex items-center justify-center transition-all active:scale-90 shadow-xl pointer-events-auto" aria-label="다음 슬라이드">
-      <span class="material-symbols-outlined text-[24px]">chevron_right</span>
+    <button onclick="changeHeroSlide(1)" class="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/50 hover:bg-black/85 backdrop-blur-md text-white border border-white/25 flex items-center justify-center transition-all active:scale-90 shadow-xl pointer-events-auto" aria-label="다음 슬라이드">
+      <span class="material-symbols-outlined text-[20px] sm:text-[24px]">chevron_right</span>
     </button>
 
-    <!-- Bottom Right: 20 Dots Navigation Strip -->
-    <div class="absolute bottom-4 right-3 sm:right-6 z-30 flex items-center gap-1 sm:gap-1.5 py-1.5 px-2.5 sm:px-3 rounded-full bg-black/65 backdrop-blur-md border border-white/20 shadow-lg pointer-events-auto">
+    <!-- Bottom Center: 20 Dots Indicator Strip -->
+    <div class="absolute bottom-2.5 sm:bottom-3 inset-x-0 z-30 flex justify-center pointer-events-none">
+      <div class="flex items-center gap-1 sm:gap-1.5 py-1 px-2.5 sm:px-3 rounded-full bg-black/60 backdrop-blur-md border border-white/20 shadow-lg pointer-events-auto">
 
             <button onclick="goToHeroSlide(0)" class="hero-dot w-4 sm:w-5 bg-[#ECC76A] h-1.5 sm:h-2 rounded-full transition-all duration-300 pointer-events-auto" aria-label="1번 슬라이드" title="3,471평 자연 속 미래형 스마트 생태자립마을"></button>
             <button onclick="goToHeroSlide(1)" class="hero-dot w-1.5 sm:w-2 bg-white/40 hover:bg-white/80 h-1.5 sm:h-2 rounded-full transition-all duration-300 pointer-events-auto" aria-label="2번 슬라이드" title="스마트 온실 AI 어그리봇과 세대 상생 파종"></button>
@@ -591,12 +192,48 @@
             <button onclick="goToHeroSlide(17)" class="hero-dot w-1.5 sm:w-2 bg-white/40 hover:bg-white/80 h-1.5 sm:h-2 rounded-full transition-all duration-300 pointer-events-auto" aria-label="18번 슬라이드" title="440m 황토 맨발 어싱(Earthing)길 솔숲 치유 보행"></button>
             <button onclick="goToHeroSlide(18)" class="hero-dot w-1.5 sm:w-2 bg-white/40 hover:bg-white/80 h-1.5 sm:h-2 rounded-full transition-all duration-300 pointer-events-auto" aria-label="19번 슬라이드" title="400m 순환 맨발 어싱(Earthing) 솔숲 치유길"></button>
             <button onclick="goToHeroSlide(19)" class="hero-dot w-1.5 sm:w-2 bg-white/40 hover:bg-white/80 h-1.5 sm:h-2 rounded-full transition-all duration-300 pointer-events-auto" aria-label="20번 슬라이드" title="어린이와 함께하는 잔디마당 자연 놀이터"></button>
+      </div>
     </div>
 
   </div>
 
-  <!-- DECOUPLED METRICS & ACTION STRIP (Located cleanly BELOW the hero image, giving 100% full view to images) -->
-  <div class="mt-3 p-3.5 sm:p-4 rounded-2xl bg-white border border-[#0F4A36]/15 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-3">
+  <!-- 2. DEDICATED EXPLANATION CARD (Placed cleanly BELOW the image so the image is 100% unobstructed!) -->
+  <div id="hero-caption-card" class="mt-2.5 sm:mt-3 p-3.5 sm:p-5 rounded-2xl bg-white border border-[#0F4A36]/15 shadow-sm transition-all duration-300">
+    <div class="flex items-center justify-between gap-2">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFF8E7] border border-[#E8CE88] text-[#8C6818] text-[11px] sm:text-[12px] font-bold shadow-xs">
+        <img src="assets/images/cheondo-gungul-emblem.svg" alt="천도교 궁을장" class="w-3.5 h-3.5 object-contain rounded-full"/>
+        <span id="hero-text-phase">AI 미래 실증 01</span>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <span id="hero-text-badge" class="text-[11px] sm:text-[12px] font-bold text-[#0F4A36] bg-[#EAF5EF] px-2.5 py-0.5 rounded-full border border-[#0F4A36]/10">01 / 20 · 미래 실증 마스터플랜</span>
+      </div>
+    </div>
+
+    <!-- Title -->
+    <h2 id="hero-text-title" class="mt-2 font-serif-luxury text-[18px] sm:text-[22px] md:text-[25px] text-[#0A3D2C] font-bold leading-tight tracking-tight transition-all duration-300">
+      3,471평 자연 속 미래형 스마트 생태자립마을
+    </h2>
+
+    <!-- Description -->
+    <p id="hero-text-desc" class="mt-1.5 text-[12.5px] sm:text-[14px] text-[#42594F] leading-relaxed transition-all duration-300">
+      양평 지평면 11,476㎡ 부지에 첨단 스마트 온실, 웰니스 센터, 생태 정원이 유기적으로 결합된 지상천국 전체 조감도입니다.
+    </p>
+
+    <!-- Tag & Navigation Hint -->
+    <div class="mt-2.5 pt-2 border-t border-[#0F4A36]/10 flex flex-wrap items-center justify-between gap-2">
+      <div class="inline-flex items-center gap-1.5 text-[11px] sm:text-[12px] text-[#1B6E50] font-semibold bg-[#EBF3EE] px-2.5 py-1 rounded-lg border border-[#1B6E50]/15">
+        <span class="material-symbols-outlined text-[14px]">verified</span>
+        <span id="hero-text-tag">부지 3,471평 확정 · 온실 2,000평 · 골조 100% 재생</span>
+      </div>
+      <div class="flex items-center gap-1 text-[11px] text-[#7A9388]">
+        <span class="material-symbols-outlined text-[14px]">touch_app</span>
+        <span>화면을 좌우로 밀어서 20장 연속 감상</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. DECOUPLED METRICS & ACTION STRIP (Cleanly placed below the explanation card) -->
+  <div class="mt-2.5 sm:mt-3 p-3.5 sm:p-4 rounded-2xl bg-white border border-[#0F4A36]/15 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-3">
     <!-- 3 Core Metrics -->
     <div class="grid grid-cols-3 gap-2 sm:gap-3 flex-1">
       <div class="flex flex-col bg-[#F3F8F5] rounded-xl p-2 sm:p-2.5 border border-[#0F4A36]/10">
@@ -1011,87 +648,187 @@
 <script>
   
   
-  // --- 20-Slide Swipeable Horizontal Carousel Controller ---
+  // --- 20-Slide Swipeable Horizontal Carousel with Below-Image Caption Controller ---
   const heroSlideData = [
   {
+    "idx": 0,
+    "img": "assets/images/sim-slide-1.jpg",
     "badge": "01 / 20 · 미래 실증 마스터플랜",
-    "title": "3,471평 자연 속 미래형 스마트 생태자립마을"
+    "phase": "AI 미래 실증 01",
+    "title": "3,471평 자연 속 미래형 스마트 생태자립마을",
+    "desc": "양평 지평면 11,476㎡ 부지에 첨단 스마트 온실, 웰니스 센터, 생태 정원이 유기적으로 결합된 지상천국 전체 조감도입니다.",
+    "tag": "부지 3,471평 확정 · 온실 2,000평 · 골조 100% 재생"
   },
   {
+    "idx": 1,
+    "img": "assets/images/sim-slide-3.jpg",
     "badge": "02 / 20 · AI 스마트 온실 파종",
-    "title": "스마트 온실 AI 어그리봇과 세대 상생 파종"
+    "phase": "AI 미래 실증 02",
+    "title": "스마트 온실 AI 어그리봇과 세대 상생 파종",
+    "desc": "무거운 모종·수확 운반은 AI 로봇이 보조하고, 어르신과 청년이 함께 건강과 보람을 찾는 스마트 일자리 현장입니다.",
+    "tag": "H-AgriBot 협동 로봇 · 시니어 맞춤 일자리 · ICT 정밀 제어"
   },
   {
+    "idx": 2,
+    "img": "assets/images/tech-robot.png",
     "badge": "03 / 20 · AI 협동 로봇 시스템",
-    "title": "AI 협동 로봇 &amp; 세대 상생 온실 실물 모델"
+    "phase": "스마트팜 모델 01",
+    "title": "AI 협동 로봇 &amp; 세대 상생 온실 실물 모델",
+    "desc": "세대 통합 스마트 온실에서 AI 로봇과 시니어가 협업하여 안전하고 무리 없는 친환경 농작업을 실현합니다.",
+    "tag": "자율 방제 및 운반 · 근골격계 부담 제로 · 시니어 안심 설계"
   },
   {
+    "idx": 3,
+    "img": "assets/images/sim-slide-4.jpg",
     "badge": "04 / 20 · 사계절 버티컬 수확",
-    "title": "첨단 수직 타워 고당도 프리미엄 딸기 수확"
+    "phase": "AI 미래 실증 03",
+    "title": "첨단 수직 타워 고당도 프리미엄 딸기 수확",
+    "desc": "사계절 균일한 환경제어로 최고 품질의 딸기와 샐러드 채소를 연중 수확하여 재단과 마을의 안정적 고수익을 창출합니다.",
+    "tag": "수직 버티컬 팜 · 사계절 균일 수확 · 친환경 무농약 인증"
   },
   {
+    "idx": 4,
+    "img": "assets/images/tech-tower.png",
     "badge": "05 / 20 · 수직 수경재배 타워",
-    "title": "버티컬 타워 &amp; 사계절 고당도 딸기 실물 설비"
+    "phase": "스마트팜 모델 02",
+    "title": "버티컬 타워 &amp; 사계절 고당도 딸기 실물 설비",
+    "desc": "수직 재배 타워에서 청년과 어르신이 함께 수확하는 노소 상생 스마트 농업 실증 설비입니다.",
+    "tag": "단위면적당 생산량 5배 · 양액 자동 순환 · 클린 룸 환경"
   },
   {
+    "idx": 5,
+    "img": "assets/images/sim-slide-5.jpg",
     "badge": "06 / 20 · 아쿠아포닉스 순환",
-    "title": "물고기와 식물이 상생하는 아쿠아포닉스 연구실"
+    "phase": "AI 미래 실증 04",
+    "title": "물고기와 식물이 상생하는 아쿠아포닉스 연구실",
+    "desc": "담수어 배설물이 식물의 천연 영양분이 되고 식물이 물을 정화하는 100% 무화학 자연 순환 생태 농법을 실증합니다.",
+    "tag": "무화학 비료 · 무농약 생태순환 · 90% 수자원 절약"
   },
   {
+    "idx": 6,
+    "img": "assets/images/tech-aquaponics.png",
     "badge": "07 / 20 · 담수어 순환 수조",
-    "title": "생태 아쿠아포닉스 유기 순환 설비 실증"
+    "phase": "스마트팜 모델 03",
+    "title": "생태 아쿠아포닉스 유기 순환 설비 실증",
+    "desc": "담수어 수조와 상부 채소 베드가 결합된 친환경 무농약 순환 설비 실물 모델입니다.",
+    "tag": "생태 순환 농업 · 친환경 안심 먹거리 · 친환경 체험 교육"
   },
   {
+    "idx": 7,
+    "img": "assets/images/hero-greenhouse.png",
     "badge": "08 / 20 · 2,000평 온실 전경",
-    "title": "양평 산세 속 2,000평 스마트 유리온실 팰리스"
+    "phase": "온실 인프라 01",
+    "title": "양평 산세 속 2,000평 스마트 유리온실 팰리스",
+    "desc": "지평면 청정 자연과 어우러진 웅장한 유리온실에서 연중 푸른 생명과 건강한 먹거리를 생산합니다.",
+    "tag": "2,000평 첨단 온실 · 자연 채광 극대화 · 내후성 알루미늄 구조"
   },
   {
+    "idx": 8,
+    "img": "assets/images/tech-monitoring.png",
     "badge": "09 / 20 · ICT 환경제어 관제",
-    "title": "AI 생육 진단 &amp; 스마트팜 원격 모니터링"
+    "phase": "스마트팜 모델 04",
+    "title": "AI 생육 진단 &amp; 스마트팜 원격 모니터링",
+    "desc": "온습도, 일조량, CO2, 양액을 24시간 실시간 진단하고 최적 생육 환경을 자동 제어하는 클라우드 관제 센터입니다.",
+    "tag": "ICT 사물인터넷 · 24시간 자동제어 · 정밀 데이터 농업"
   },
   {
+    "idx": 9,
+    "img": "assets/images/sim-slide-2.jpg",
     "badge": "10 / 20 · 골조 보존 완공 조감",
-    "title": "기존 본관 골조(B1~3F)를 100% 재생한 웰니스 센터"
+    "phase": "건축 재생 01",
+    "title": "기존 본관 골조(B1~3F)를 100% 재생한 웰니스 센터",
+    "desc": "튼튼한 라멘조 골조를 친환경 리모델링하여 공사비 42%를 절감하고 현대적 힐링 공간으로 완공한 조감도입니다.",
+    "tag": "골조 100% 재활용 · 42% 건축비 절감 · 무장애 유니버설 디자인"
   },
   {
+    "idx": 10,
+    "img": "assets/images/wellness-hallway.png",
     "badge": "11 / 20 · 바이오월 힐링 회랑",
-    "title": "천연 음이온 산소 힐링 라운지 회랑"
+    "phase": "요양원 재생 01",
+    "title": "천연 음이온 산소 힐링 라운지 회랑",
+    "desc": "식물 바이오월 회랑과 수경 폭포 휴게 라운지로 본관 내부를 사계절 산소 숲으로 탈바꿈합니다.",
+    "tag": "실내 식물 벽면녹화 · 음이온 수경 폭포 · 휠체어 무장애 동선"
   },
   {
+    "idx": 11,
+    "img": "assets/images/sim-slide-9.jpg",
     "badge": "12 / 20 · 편백 스마트 레지던스",
-    "title": "천연 편백나무 무장애 스마트 시니어 레지던스"
+    "phase": "시니어 주거 01",
+    "title": "천연 편백나무 무장애 스마트 시니어 레지던스",
+    "desc": "피톤치드 가득한 편백 원목과 실시간 헬스케어 모니터링으로 24시간 안전하고 안락한 품격 주거를 제공합니다.",
+    "tag": "천연 편백 원목 · 실시간 바이탈 케어 · 100% 무장애 설계"
   },
   {
+    "idx": 12,
+    "img": "assets/images/wellness-room.png",
     "badge": "13 / 20 · 1인 독립 힐링 룸",
-    "title": "친환경 원목 맞춤형 시니어 주거 유닛"
+    "phase": "요양원 재생 02",
+    "title": "친환경 원목 맞춤형 시니어 주거 유닛",
+    "desc": "햇살 가득한 채광창과 편안한 1인 맞춤형 원목 인테리어로 안락한 독립 생활을 보장합니다.",
+    "tag": "1인 맞춤형 힐링 주거 · 온열 바닥 난방 · 비상 안심 호출 벨"
   },
   {
+    "idx": 13,
+    "img": "assets/images/sim-slide-10.jpg",
     "badge": "14 / 20 · 암반수 아쿠아 스파",
-    "title": "지하 암반수 숲 조망 온열 아쿠아 스파 &amp; 명상"
+    "phase": "웰니스 힐링 01",
+    "title": "지하 암반수 숲 조망 온열 아쿠아 스파 &amp; 명상",
+    "desc": "양평 청정 지하 200m 천연 암반 온수 풀에서 밤 숲을 조망하며 하루의 피로를 녹이는 명상 테라피 공간입니다.",
+    "tag": "천연 암반 온수 풀 · 숲 조망 파노라마 통창 · 심신 정화 힐링"
   },
   {
+    "idx": 14,
+    "img": "assets/images/wellness-spa.png",
     "badge": "15 / 20 · 사계절 아쿠아 테라피",
-    "title": "사계절 소나무 숲을 품은 아쿠아 테라피 통창"
+    "phase": "요양원 재생 03",
+    "title": "사계절 소나무 숲을 품은 아쿠아 테라피 통창",
+    "desc": "청정 산림욕 통창 뷰와 피톤치드 아쿠아 테라피 복도가 어우러진 실내 온천 힐링 라운지입니다.",
+    "tag": "사계절 산림욕 통창 · 피톤치드 테라피 · 편백 족욕장 연계"
   },
   {
+    "idx": 15,
+    "img": "assets/images/sim-slide-8.jpg",
     "badge": "16 / 20 · 노을빛 팜 바비큐",
-    "title": "잔디마당 유기농 팜 바비큐 &amp; 글램핑 캠크닉"
+    "phase": "야외 힐링 01",
+    "title": "잔디마당 유기농 팜 바비큐 &amp; 글램핑 캠크닉",
+    "desc": "황금빛 노을 아래 갓 수확한 유기농 채소와 함께 온 가족과 이웃이 나누는 따뜻한 저녁 바비큐 파티입니다.",
+    "tag": "글램핑 사파리 텐트 · 팜 바비큐 파티 · 가족 힐링 캠크닉"
   },
   {
+    "idx": 16,
+    "img": "assets/images/nature-bbq.png",
     "badge": "17 / 20 · 글램핑 가든 파티",
-    "title": "유기농 바비큐 &amp; 친환경 글램핑 캠프"
+    "phase": "야외 레저 01",
+    "title": "유기농 바비큐 &amp; 친환경 글램핑 캠프",
+    "desc": "3대 가족이 함께 모여 온실 유기농 채소와 바비큐를 즐기는 행복한 주말 가든 파티 실황입니다.",
+    "tag": "3대 가족 캠크닉 · 로컬 푸드 팜투테이블 · 야외 화롯대 불멍"
   },
   {
+    "idx": 17,
+    "img": "assets/images/sim-slide-7.jpg",
     "badge": "18 / 20 · 440m 황토 어싱길",
-    "title": "440m 황토 맨발 어싱(Earthing)길 솔숲 치유 보행"
+    "phase": "야외 힐링 02",
+    "title": "440m 황토 맨발 어싱(Earthing)길 솔숲 치유 보행",
+    "desc": "소나무 숲길을 따라 붉은 황토를 맨발로 걸으며 체내 활성산소를 배출하고 자연 생명력을 충전합니다.",
+    "tag": "440m 붉은 황토길 · 맨발 어싱 치유 · 체내 활성산소 배출"
   },
   {
+    "idx": 18,
+    "img": "assets/images/nature-earthing.png",
     "badge": "19 / 20 · 연꽃 솔숲 어싱로",
-    "title": "400m 순환 맨발 어싱(Earthing) 솔숲 치유길"
+    "phase": "야외 레저 02",
+    "title": "400m 순환 맨발 어싱(Earthing) 솔숲 치유길",
+    "desc": "양평 잣나무 숲과 연꽃 연못을 잇는 맨발 힐링 황톳길을 따라 어르신들이 건강하게 산책하는 모습입니다.",
+    "tag": "순환형 산책 동선 · 음이온 숲길 · 세족장 및 족욕장 완비"
   },
   {
+    "idx": 19,
+    "img": "assets/images/nature-lawn.png",
     "badge": "20 / 20 · 잔디마당 자연놀이터",
-    "title": "어린이와 함께하는 잔디마당 자연 놀이터"
+    "phase": "야외 레저 03",
+    "title": "어린이와 함께하는 잔디마당 자연 놀이터",
+    "desc": "넓은 천연 잔디밭에서 아이들과 어르신이 자연을 체험하며 어우러지는 주말 팜스테이 & 캠크닉 생태 놀이 공간입니다.",
+    "tag": "천연 잔디마당 · 세대 통합 놀이터 · 주말 팜스테이 캠크닉"
   }
 ];
 
@@ -1110,6 +847,13 @@
     const track = document.getElementById('hero-slider-track');
     const dots = document.querySelectorAll('.hero-dot');
     const badgeEl = document.getElementById('hero-slide-badge');
+
+    // Explanation card elements
+    const textPhaseEl = document.getElementById('hero-text-phase');
+    const textBadgeEl = document.getElementById('hero-text-badge');
+    const textTitleEl = document.getElementById('hero-text-title');
+    const textDescEl = document.getElementById('hero-text-desc');
+    const textTagEl = document.getElementById('hero-text-tag');
 
     currentHeroSlide = (index + totalHeroSlides) % totalHeroSlides;
     currentTranslate = -currentHeroSlide * 100;
@@ -1131,8 +875,32 @@
       }
     });
 
-    if (badgeEl && heroSlideData[currentHeroSlide]) {
-      badgeEl.textContent = heroSlideData[currentHeroSlide].badge;
+    const currentData = heroSlideData[currentHeroSlide];
+    if (badgeEl && currentData) {
+      badgeEl.textContent = (currentHeroSlide + 1).toString().padStart(2, '0') + ' / 20';
+    }
+
+    // Update synchronized explanation text below the image
+    if (currentData) {
+      if (textPhaseEl) textPhaseEl.textContent = currentData.phase;
+      if (textBadgeEl) textBadgeEl.textContent = currentData.badge;
+      if (textTagEl) textTagEl.textContent = currentData.tag;
+
+      if (textTitleEl) {
+        textTitleEl.style.opacity = '0.3';
+        setTimeout(() => {
+          textTitleEl.innerHTML = currentData.title;
+          textTitleEl.style.opacity = '1';
+        }, 120);
+      }
+
+      if (textDescEl) {
+        textDescEl.style.opacity = '0.3';
+        setTimeout(() => {
+          textDescEl.textContent = currentData.desc;
+          textDescEl.style.opacity = '1';
+        }, 120);
+      }
     }
   }
 
@@ -1179,6 +947,7 @@
     startHeroTimer();
 
     const track = document.getElementById('hero-slider-track');
+    const card = document.getElementById('hero-caption-card');
     if (!track) return;
 
     function getX(e) {
@@ -1218,10 +987,10 @@
       const containerWidth = track.parentElement.offsetWidth || window.innerWidth;
       const diffPercent = (diff / containerWidth) * 100;
 
-      // Threshold: 8% drag or roughly 30px
-      if (diffPercent < -7) {
+      // Threshold: 7% drag or roughly 25px
+      if (diffPercent < -6) {
         currentHeroSlide = Math.min(currentHeroSlide + 1, totalHeroSlides - 1);
-      } else if (diffPercent > 7) {
+      } else if (diffPercent > 6) {
         currentHeroSlide = Math.max(currentHeroSlide - 1, 0);
       }
 
@@ -1229,13 +998,20 @@
       if (isHeroAutoPlaying) startHeroTimer();
     }
 
-    // Touch Events (Mobile)
+    // Touch Events on Image Track (Mobile)
     track.addEventListener('touchstart', onDragStart, { passive: true });
     track.addEventListener('touchmove', onDragMove, { passive: true });
     track.addEventListener('touchend', onDragEnd, { passive: true });
     track.addEventListener('touchcancel', onDragEnd, { passive: true });
 
-    // Mouse Drag Events (Desktop)
+    // Touch Events on Caption Card (Mobile - also allows swiping on the card!)
+    if (card) {
+      card.addEventListener('touchstart', onDragStart, { passive: true });
+      card.addEventListener('touchmove', onDragMove, { passive: true });
+      card.addEventListener('touchend', onDragEnd, { passive: true });
+    }
+
+    // Mouse Drag Events on Image Track (Desktop)
     track.addEventListener('mousedown', onDragStart);
     window.addEventListener('mousemove', onDragMove);
     window.addEventListener('mouseup', onDragEnd);
