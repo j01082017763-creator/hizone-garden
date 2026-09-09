@@ -95,6 +95,11 @@
       </div>
 
       <div class="flex items-center gap-1.5">
+        <a href="yangpyeong.html" class="flex items-center gap-1 px-3 py-1.5 rounded-xl bg-[#006c49] text-white text-[11px] font-bold shadow-xs hover:bg-[#005238] transition-all">
+          <span class="material-symbols-outlined text-[15px]">nature_people</span>
+          <span>양평 스마트팜 홈피</span>
+        </a>
+
         <!-- Live status indicator badge -->
         <div class="hidden sm:flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container text-[11px] font-medium">
           <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
@@ -827,6 +832,24 @@ const DEFAULT_DB = {
   ],
 
   TENANTS: [
+    {
+      id: 'tnt-yangpyeong',
+      user_id: 'usr-admin',
+      slug: 'yangpyeong-paradise',
+      name: '양평 지상천국 스마트팜 본부 (3,471평)',
+      space_type: '복합 6차 스마트팜 & 치유마을',
+      intro_text: '천도교 유지재단 궁을행복요양원 유휴 부지 3,471평에 세워지는 전국 최초 친환경 아쿠아포닉스·수경재배 스마트 온실(2,000평) 및 시니어·청년 상생 치유 공동체마을입니다.',
+      theme_palette_id: 'green',
+      layout_variant: 'A',
+      location: '경기 양평군 여양2로',
+      tags: ['#양평지상천국', '#3471평실증', '#아쿠아포닉스', '#골조재생42%절감', '#노소상생'],
+      banner_img: 'assets/images/hero-greenhouse.png',
+      profile_img: 'favicon.svg',
+      visitor_count: 12480,
+      cheer_count: 954,
+      is_featured: true,
+      created_at: '2026-02-01T00:00:00Z'
+    },
     {
       id: 'tnt-yeonnam',
       user_id: 'usr-001',
