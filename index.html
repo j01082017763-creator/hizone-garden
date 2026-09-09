@@ -76,42 +76,33 @@
 <body class="bg-background text-on-surface font-sans flex flex-col min-h-screen select-none antialiased">
 
   <!-- ================= TOP FLOATING HEADER ================= -->
-  <header class="fixed top-0 w-full z-40 pt-safe bg-surface/90 backdrop-blur-xl border-b border-surface-container shadow-sm">
-    <div class="h-14 px-4 flex items-center justify-between max-w-[500px] mx-auto">
-      <div class="flex items-center gap-2.5 cursor-pointer" onclick="window.location.hash='#/portal'">
-        <div class="w-8 h-8 rounded-xl overflow-hidden shadow-sm flex items-center justify-center bg-primary">
-          <svg class="w-6 h-6" viewBox="0 0 100 100" fill="none">
-            <rect width="100" height="100" rx="24" fill="#006c49"/>
-            <path d="M50 20C42 35 30 45 22 55C14 65 18 78 30 80C42 82 48 72 50 65C52 72 58 82 70 80C82 78 86 65 78 55C70 45 58 35 50 20Z" fill="#A7F3D0"/>
-            <path d="M50 35V75" stroke="#065F46" stroke-width="4" stroke-linecap="round"/>
-            <path d="M50 50C42 46 36 48 34 52" stroke="#065F46" stroke-width="3" stroke-linecap="round"/>
-            <path d="M50 60C58 56 64 58 66 62" stroke="#065F46" stroke-width="3" stroke-linecap="round"/>
-          </svg>
+    <header class="fixed top-0 w-full z-40 pt-safe bg-white/92 backdrop-blur-xl border-b border-surface-container shadow-xs">
+    <div class="h-14 px-3 sm:px-4 flex items-center justify-between max-w-[500px] mx-auto gap-2">
+      
+      <!-- Brand: Hizone Garden -->
+      <div class="flex items-center gap-2 cursor-pointer select-none" onclick="window.location.hash='#/portal'">
+        <div class="w-8 h-8 rounded-xl overflow-hidden shadow-xs flex items-center justify-center bg-[#006c49]">
+          <img src="favicon.svg" alt="하이존가든" class="w-6 h-6 object-contain"/>
         </div>
         <div class="flex flex-col">
-          <span class="text-[17px] font-bold text-on-surface tracking-tight leading-none">하이존가든</span>
-          <span class="text-[11px] font-semibold text-primary tracking-wide leading-none mt-1">HIZONE BIO-POD</span>
+          <span class="text-[16px] font-bold text-on-surface tracking-tight leading-none">하이존가든</span>
+          <span class="text-[10px] font-semibold text-[#006c49] tracking-wide leading-none mt-1">HIZONE BIO-POD</span>
         </div>
       </div>
 
-      <div class="flex items-center gap-1.5">
-        <a href="yangpyeong.html" class="flex items-center gap-1 px-3 py-1.5 rounded-xl bg-[#006c49] text-white text-[11px] font-bold shadow-xs hover:bg-[#005238] transition-all">
-          <span class="material-symbols-outlined text-[15px]">nature_people</span>
-          <span>양평 스마트팜 홈피</span>
+      <!-- Action Buttons: Yangpyeong Link & Webhook Logs -->
+      <div class="flex items-center gap-1.5 shrink-0">
+        <!-- Yangpyeong Paradise Link Image -->
+        <a href="yangpyeong.html" class="hover:scale-105 active:scale-95 transition-transform inline-flex items-center" title="양평 지상락원 홈피">
+          <img src="assets/images/logo-jisang-paradise.svg" alt="양평 지상락원" class="h-[28px] sm:h-[32px] w-auto max-w-[130px] object-contain"/>
         </a>
 
-        <!-- Live status indicator badge -->
-        <div class="hidden sm:flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container text-[11px] font-medium">
-          <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
-          <span>실시간 동기화</span>
-        </div>
-
-        <!-- Kakao Webhook Logs button -->
-        <button onclick="window.location.hash='#/logs'" class="relative w-9 h-9 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="카카오 알림톡 웹훅 로그 콘솔">
-          <span class="material-symbols-outlined text-[20px]">notifications</span>
-          <span id="alimtalk-badge" class="absolute top-1 right-1 w-4 h-4 rounded-full bg-[#FEE500] text-[#191919] font-data font-bold text-[10px] flex items-center justify-center shadow">3</span>
+        <!-- Kakao Logs button -->
+        <button onclick="window.location.hash='#/logs'" class="w-8 h-8 rounded-xl bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors" title="알림톡 로그">
+          <span class="material-symbols-outlined text-[17px]">chat</span>
         </button>
       </div>
+
     </div>
   </header>
 

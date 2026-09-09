@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 52" fill="none">
+  <!-- Sacred nature badge icon -->
+  <rect x="2" y="4" width="44" height="44" rx="14" fill="#0A3D2C"/>
+  <rect x="2" y="4" width="44" height="44" rx="14" stroke="#C59F48" stroke-width="1.5"/>
+  <!-- Leaf & Heaven Motif -->
+  <path d="M24 12C20 20 13 25 9 31C5 37 7 43 14 44C21 45 23 40 24 36C25 40 27 45 34 44C41 43 43 37 39 31C35 25 28 20 24 12Z" fill="#ECC76A"/>
+  <path d="M24 19V38" stroke="#0A3D2C" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="24" cy="18" r="2.5" fill="#FFF8E7"/>
+
+  <!-- Typography: '양평 지상락원' -->
+  <text x="56" y="27" font-family="'Noto Serif KR', 'Apple SD Gothic Neo', serif" font-weight="900" font-size="20" fill="#0A3D2C" letter-spacing="-0.5">양평 지상락원</text>
+  <!-- Subtitle -->
+  <text x="57" y="42" font-family="'Noto Sans KR', sans-serif" font-weight="700" font-size="9.5" fill="#C59F48" letter-spacing="1.2">궁을행복요양원 재생 스마트팜</text>
+</svg>
