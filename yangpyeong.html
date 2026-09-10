@@ -637,75 +637,49 @@
 
 <!-- ================= 5.5 CORE PHOTO SLIDER: GREENHOUSE HEALING CAFE & LOCAL MARKET (8 REAL PHOTOS) ================= -->
 <section class="px-gutter-mobile py-space-xl flex flex-col gap-space-sm bg-gradient-to-b from-[#F2F7F4] to-[#E9F2ED] border-y border-[#0F4A36]/15" id="greenhouse-cafe-market">
+  <!-- Title Row: 굴제목과 그옆에것만 남김 (영어 삭제) -->
   <div class="flex items-center justify-between">
-    <div class="flex flex-col gap-0.5">
-      <div class="flex items-center gap-1.5 text-[#1B6E50]">
-        <span class="material-symbols-outlined text-[16px]">local_cafe</span>
-        <span class="font-label-sm text-label-sm text-[#1B6E50] font-bold tracking-wider uppercase">02-B. Botanical Healing Cafe &amp; Local Market</span>
-      </div>
-      <h2 class="font-serif-luxury text-[23px] sm:text-[26px] font-bold text-[#0B3524] tracking-tight leading-snug">온실 치유 카페 &amp; 로컬 상생 마켓</h2>
-      <p class="font-body-sm text-[13px] text-[#42594F]">사계절 푸른 생명력과 팜투테이블 미식이 공존하는 힐링 랜드마크</p>
-    </div>
-    <div class="shrink-0 flex items-center gap-1 bg-[#0F4A36]/10 border border-[#0F4A36]/20 px-2.5 py-1 rounded-full text-[11px] text-[#0A3D2C] font-bold">
+    <h2 class="font-serif-luxury text-[22px] sm:text-[25px] font-bold text-[#0B3524] tracking-tight leading-snug">온실 치유 카페 &amp; 로컬 상생 마켓</h2>
+    <div class="shrink-0 flex items-center gap-1 bg-[#0F4A36]/10 border border-[#0F4A36]/20 px-2.5 py-1 rounded-full text-[11.5px] text-[#0A3D2C] font-bold">
       <span class="material-symbols-outlined text-[14px] text-[#1B6E50]">photo_library</span>
-      <span>8개 전경 실사</span>
+      <span>8장 실사</span>
     </div>
   </div>
 
-  <!-- Swipe & Interaction Banner -->
-  <div class="flex items-center justify-between text-[11.5px] px-1 text-[#334D41]">
-    <div class="flex items-center gap-1.5">
-      <span class="material-symbols-outlined text-[15px] text-[#1B6E50]">touch_app</span>
-      <span>좌우로 밀거나 화살표를 눌러 8가지 온실 라이프를 만나보세요.</span>
-    </div>
-    <div class="flex items-center gap-1 text-[11px] text-[#1B6E50] font-semibold">
-      <span class="material-symbols-outlined text-[13px]">aspect_ratio</span>
-      <span>16:9 와이드 HD</span>
-    </div>
-  </div>
+  <!-- 1.2.3.4... Slide Number Buttons (제목과 이미지 사이 글 삭제 후 번호 배치) -->
+  <div class="flex items-center justify-between gap-1 sm:gap-1.5 select-none">
 
-  <!-- Quick Category Tabs (Horizontal Scroll) -->
-  <div class="flex gap-1.5 overflow-x-auto pb-1.5 no-scrollbar -mx-gutter-mobile px-gutter-mobile">
+    <button onclick="goToCafeSlide(0)" class="cafe-thumb-btn flex-1 py-1.5 sm:py-2 rounded-xl border text-[13px] sm:text-[14px] font-bold transition-all flex items-center justify-center bg-[#0F4A36] text-[#FFF8E7] border-[#0F4A36] shadow-sm">
+      1
+    </button>
 
-      <button onclick="goToCafeSlide(0)" class="cafe-thumb-btn shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-[11.5px] font-semibold transition-all bg-[#0F4A36] text-[#FFF8E7] border-[#0F4A36] shadow-sm">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#ECC76A]"></span>
-        <span>01. 첫인상</span>
-      </button>
+    <button onclick="goToCafeSlide(1)" class="cafe-thumb-btn flex-1 py-1.5 sm:py-2 rounded-xl border text-[13px] sm:text-[14px] font-bold transition-all flex items-center justify-center bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]">
+      2
+    </button>
 
-      <button onclick="goToCafeSlide(1)" class="cafe-thumb-btn shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-[11.5px] font-semibold transition-all bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#0F4A36]/40"></span>
-        <span>02. 바리스타</span>
-      </button>
+    <button onclick="goToCafeSlide(2)" class="cafe-thumb-btn flex-1 py-1.5 sm:py-2 rounded-xl border text-[13px] sm:text-[14px] font-bold transition-all flex items-center justify-center bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]">
+      3
+    </button>
 
-      <button onclick="goToCafeSlide(2)" class="cafe-thumb-btn shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-[11.5px] font-semibold transition-all bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#0F4A36]/40"></span>
-        <span>03. 팜투테이블</span>
-      </button>
+    <button onclick="goToCafeSlide(3)" class="cafe-thumb-btn flex-1 py-1.5 sm:py-2 rounded-xl border text-[13px] sm:text-[14px] font-bold transition-all flex items-center justify-center bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]">
+      4
+    </button>
 
-      <button onclick="goToCafeSlide(3)" class="cafe-thumb-btn shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-[11.5px] font-semibold transition-all bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#0F4A36]/40"></span>
-        <span>04. 베이커리</span>
-      </button>
+    <button onclick="goToCafeSlide(4)" class="cafe-thumb-btn flex-1 py-1.5 sm:py-2 rounded-xl border text-[13px] sm:text-[14px] font-bold transition-all flex items-center justify-center bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]">
+      5
+    </button>
 
-      <button onclick="goToCafeSlide(4)" class="cafe-thumb-btn shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-[11.5px] font-semibold transition-all bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#0F4A36]/40"></span>
-        <span>05. 서빙</span>
-      </button>
+    <button onclick="goToCafeSlide(5)" class="cafe-thumb-btn flex-1 py-1.5 sm:py-2 rounded-xl border text-[13px] sm:text-[14px] font-bold transition-all flex items-center justify-center bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]">
+      6
+    </button>
 
-      <button onclick="goToCafeSlide(5)" class="cafe-thumb-btn shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-[11.5px] font-semibold transition-all bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#0F4A36]/40"></span>
-        <span>06. 세대</span>
-      </button>
+    <button onclick="goToCafeSlide(6)" class="cafe-thumb-btn flex-1 py-1.5 sm:py-2 rounded-xl border text-[13px] sm:text-[14px] font-bold transition-all flex items-center justify-center bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]">
+      7
+    </button>
 
-      <button onclick="goToCafeSlide(6)" class="cafe-thumb-btn shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-[11.5px] font-semibold transition-all bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#0F4A36]/40"></span>
-        <span>07. 로컬</span>
-      </button>
-
-      <button onclick="goToCafeSlide(7)" class="cafe-thumb-btn shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-[11.5px] font-semibold transition-all bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#0F4A36]/40"></span>
-        <span>08. 대파노라마</span>
-      </button>
+    <button onclick="goToCafeSlide(7)" class="cafe-thumb-btn flex-1 py-1.5 sm:py-2 rounded-xl border text-[13px] sm:text-[14px] font-bold transition-all flex items-center justify-center bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]">
+      8
+    </button>
   </div>
 
   <!-- 16:9 Image Carousel Frame -->
@@ -717,8 +691,8 @@
       <div class="shrink-0 w-full snap-center relative aspect-video bg-[#0A261B] overflow-hidden cursor-pointer" onclick="openLightbox('assets/images/cafe-shot-1.jpg', '햇살 가득한 유리온실 카페로 들어서는 설레는 첫걸음')">
         <img src="assets/images/cafe-shot-1.jpg" alt="햇살 가득한 유리온실 카페로 들어서는 설레는 첫걸음" class="w-full h-full object-cover select-none" loading="eager"/>
         <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none"></div>
-        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/60 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
-          01 / 08
+        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/65 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
+          1 / 8
         </span>
         <button onclick="event.stopPropagation(); openLightbox('assets/images/cafe-shot-1.jpg', '햇살 가득한 유리온실 카페로 들어서는 설레는 첫걸음')" class="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center hover:bg-black/80 transition-all border border-white/20">
           <span class="material-symbols-outlined text-[16px]">fullscreen</span>
@@ -729,8 +703,8 @@
       <div class="shrink-0 w-full snap-center relative aspect-video bg-[#0A261B] overflow-hidden cursor-pointer" onclick="openLightbox('assets/images/cafe-shot-2.jpg', '에스프레소 바 옆 수경 포트에서 즉석 수확한 허브 가니쉬')">
         <img src="assets/images/cafe-shot-2.jpg" alt="에스프레소 바 옆 수경 포트에서 즉석 수확한 허브 가니쉬" class="w-full h-full object-cover select-none" loading="lazy"/>
         <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none"></div>
-        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/60 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
-          02 / 08
+        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/65 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
+          2 / 8
         </span>
         <button onclick="event.stopPropagation(); openLightbox('assets/images/cafe-shot-2.jpg', '에스프레소 바 옆 수경 포트에서 즉석 수확한 허브 가니쉬')" class="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center hover:bg-black/80 transition-all border border-white/20">
           <span class="material-symbols-outlined text-[16px]">fullscreen</span>
@@ -741,8 +715,8 @@
       <div class="shrink-0 w-full snap-center relative aspect-video bg-[#0A261B] overflow-hidden cursor-pointer" onclick="openLightbox('assets/images/cafe-shot-3.jpg', '온실에서 갓 딴 채소로 차린 3대 가족의 유기농 팜 식탁')">
         <img src="assets/images/cafe-shot-3.jpg" alt="온실에서 갓 딴 채소로 차린 3대 가족의 유기농 팜 식탁" class="w-full h-full object-cover select-none" loading="lazy"/>
         <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none"></div>
-        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/60 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
-          03 / 08
+        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/65 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
+          3 / 8
         </span>
         <button onclick="event.stopPropagation(); openLightbox('assets/images/cafe-shot-3.jpg', '온실에서 갓 딴 채소로 차린 3대 가족의 유기농 팜 식탁')" class="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center hover:bg-black/80 transition-all border border-white/20">
           <span class="material-symbols-outlined text-[16px]">fullscreen</span>
@@ -753,8 +727,8 @@
       <div class="shrink-0 w-full snap-center relative aspect-video bg-[#0A261B] overflow-hidden cursor-pointer" onclick="openLightbox('assets/images/cafe-shot-4.jpg', '오픈 키친 화덕 오븐에서 갓 구워낸 따끈한 천연 발효빵')">
         <img src="assets/images/cafe-shot-4.jpg" alt="오픈 키친 화덕 오븐에서 갓 구워낸 따끈한 천연 발효빵" class="w-full h-full object-cover select-none" loading="lazy"/>
         <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none"></div>
-        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/60 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
-          04 / 08
+        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/65 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
+          4 / 8
         </span>
         <button onclick="event.stopPropagation(); openLightbox('assets/images/cafe-shot-4.jpg', '오픈 키친 화덕 오븐에서 갓 구워낸 따끈한 천연 발효빵')" class="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center hover:bg-black/80 transition-all border border-white/20">
           <span class="material-symbols-outlined text-[16px]">fullscreen</span>
@@ -765,8 +739,8 @@
       <div class="shrink-0 w-full snap-center relative aspect-video bg-[#0A261B] overflow-hidden cursor-pointer" onclick="openLightbox('assets/images/cafe-shot-5.jpg', '테이블 사이를 부드럽게 누비며 커피를 배달하는 로봇 'Berry'')">
         <img src="assets/images/cafe-shot-5.jpg" alt="테이블 사이를 부드럽게 누비며 커피를 배달하는 로봇 'Berry'" class="w-full h-full object-cover select-none" loading="lazy"/>
         <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none"></div>
-        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/60 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
-          05 / 08
+        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/65 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
+          5 / 8
         </span>
         <button onclick="event.stopPropagation(); openLightbox('assets/images/cafe-shot-5.jpg', '테이블 사이를 부드럽게 누비며 커피를 배달하는 로봇 'Berry'')" class="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center hover:bg-black/80 transition-all border border-white/20">
           <span class="material-symbols-outlined text-[16px]">fullscreen</span>
@@ -777,8 +751,8 @@
       <div class="shrink-0 w-full snap-center relative aspect-video bg-[#0A261B] overflow-hidden cursor-pointer" onclick="openLightbox('assets/images/cafe-shot-6.jpg', '스마트 수직 타워에서 함께 허브를 가꾸는 세대 통합 일자리')">
         <img src="assets/images/cafe-shot-6.jpg" alt="스마트 수직 타워에서 함께 허브를 가꾸는 세대 통합 일자리" class="w-full h-full object-cover select-none" loading="lazy"/>
         <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none"></div>
-        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/60 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
-          06 / 08
+        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/65 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
+          6 / 8
         </span>
         <button onclick="event.stopPropagation(); openLightbox('assets/images/cafe-shot-6.jpg', '스마트 수직 타워에서 함께 허브를 가꾸는 세대 통합 일자리')" class="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center hover:bg-black/80 transition-all border border-white/20">
           <span class="material-symbols-outlined text-[16px]">fullscreen</span>
@@ -789,8 +763,8 @@
       <div class="shrink-0 w-full snap-center relative aspect-video bg-[#0A261B] overflow-hidden cursor-pointer" onclick="openLightbox('assets/images/cafe-shot-7.jpg', '흙내음 가득한 당일 수확 채소와 특산품 직거래 마켓')">
         <img src="assets/images/cafe-shot-7.jpg" alt="흙내음 가득한 당일 수확 채소와 특산품 직거래 마켓" class="w-full h-full object-cover select-none" loading="lazy"/>
         <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none"></div>
-        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/60 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
-          07 / 08
+        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/65 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
+          7 / 8
         </span>
         <button onclick="event.stopPropagation(); openLightbox('assets/images/cafe-shot-7.jpg', '흙내음 가득한 당일 수확 채소와 특산품 직거래 마켓')" class="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center hover:bg-black/80 transition-all border border-white/20">
           <span class="material-symbols-outlined text-[16px]">fullscreen</span>
@@ -801,8 +775,8 @@
       <div class="shrink-0 w-full snap-center relative aspect-video bg-[#0A261B] overflow-hidden cursor-pointer" onclick="openLightbox('assets/images/cafe-shot-8.jpg', '높은 아치형 유리 천장 아래 펼쳐진 스마트 생태 지상락원')">
         <img src="assets/images/cafe-shot-8.jpg" alt="높은 아치형 유리 천장 아래 펼쳐진 스마트 생태 지상락원" class="w-full h-full object-cover select-none" loading="lazy"/>
         <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none"></div>
-        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/60 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
-          08 / 08
+        <span class="absolute top-3 left-3 px-2.5 py-1 bg-black/65 backdrop-blur-md text-[#ECC76A] rounded-full text-[11px] font-bold border border-[#ECC76A]/30">
+          8 / 8
         </span>
         <button onclick="event.stopPropagation(); openLightbox('assets/images/cafe-shot-8.jpg', '높은 아치형 유리 천장 아래 펼쳐진 스마트 생태 지상락원')" class="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center hover:bg-black/80 transition-all border border-white/20">
           <span class="material-symbols-outlined text-[16px]">fullscreen</span>
@@ -846,25 +820,25 @@
           <span class="material-symbols-outlined text-[13px]" id="cafe-play-pause-icon">pause</span>
         </button>
         <span id="cafe-slide-badge" class="px-2.5 py-1 bg-black/65 backdrop-blur-md text-white text-[11px] font-bold rounded-full border border-white/20">
-          01 / 08
+          1 / 8
         </span>
       </div>
     </div>
   </div>
 
-  <!-- Synchronized Explanatory Card Below Image (Clean, No Cut-Off on Mobile) -->
+  <!-- Synchronized Explanatory Card Below Image (Clean, No English) -->
   <div class="bg-white rounded-2xl p-4 sm:p-5 border border-[#0F4A36]/15 shadow-sm flex flex-col gap-2.5 transition-all duration-300" id="cafe-explanation-card">
     <div class="flex items-center justify-between border-b border-[#0F4A36]/10 pb-2">
       <div class="flex items-center gap-2">
         <span id="cafe-text-phase" class="px-2 py-0.5 rounded-full text-[10.5px] font-bold bg-[#E8F2EC] text-[#0F4A36] border border-[#0F4A36]/15">
-          온실 치유 카페 01
+          1번 자료
         </span>
         <span id="cafe-text-theme" class="text-[12px] font-bold text-[#A67C1E]">
           환상의 보태니컬 엔트런스
         </span>
       </div>
-      <span id="cafe-text-badge" class="text-[11px] text-[#617D70] font-semibold">
-        01 / 08 · 첫인상 (Entrance)
+      <span id="cafe-text-badge" class="text-[12px] text-[#0F4A36] font-bold">
+        1. 첫인상
       </span>
     </div>
 
@@ -1022,8 +996,9 @@
   {
     "idx": 0,
     "img": "assets/images/cafe-shot-1.jpg",
-    "badge": "01 / 08 · 첫인상 (Entrance)",
-    "phase": "온실 치유 카페 01",
+    "num": "1",
+    "badge": "1. 첫인상",
+    "phase": "1번 자료",
     "theme": "환상의 보태니컬 엔트런스",
     "title": "햇살 가득한 유리온실 카페로 들어서는 설레는 첫걸음",
     "desc": "높은 유리 천장을 통해 눈부신 아침 햇살이 쏟아져 내리고, 천장 가득 매달린 수경재배 허브 플랜터와 생명력 넘치는 수직 식물벽이 방문객을 맞이합니다. 도심의 번잡함을 잊게 하는 감탄과 힐링의 순간입니다.",
@@ -1032,8 +1007,9 @@
   {
     "idx": 1,
     "img": "assets/images/cafe-shot-2.jpg",
-    "badge": "02 / 08 · 바리스타 (Coffee)",
-    "phase": "온실 치유 카페 02",
+    "num": "2",
+    "badge": "2. 바리스타",
+    "phase": "2번 자료",
     "theme": "수경재배 생민트 스페셜티 음료",
     "title": "에스프레소 바 옆 수경 포트에서 즉석 수확한 허브 가니쉬",
     "desc": "앞치마를 두른 바리스타가 에스프레소 머신 바로 옆 수경재배 포트에서 신선한 애플민트를 즉석에서 따 음료 위에 올립니다. 갓 볶은 원두의 그윽한 향과 허브의 청량함이 어우러져 카운터 너머 손님들의 눈과 입을 사로잡습니다.",
@@ -1042,8 +1018,9 @@
   {
     "idx": 2,
     "img": "assets/images/cafe-shot-3.jpg",
-    "badge": "03 / 08 · 팜투테이블 (Farm-to-table)",
-    "phase": "온실 치유 카페 03",
+    "num": "3",
+    "badge": "3. 팜투테이블",
+    "phase": "3번 자료",
     "theme": "3대 가족 초신선 팜 샐러드",
     "title": "온실에서 갓 딴 채소로 차린 3대 가족의 유기농 팜 식탁",
     "desc": "할머니, 어머니, 어린 손주 3대가 원목 테이블에 둘러앉아 싱싱한 샐러드를 나눕니다. 테이블 바로 뒤 선반에서 자라는 싱싱한 채소를 직접 눈으로 확인하며 먹는 가장 정직하고 건강한 힐링 식사입니다.",
@@ -1052,8 +1029,9 @@
   {
     "idx": 3,
     "img": "assets/images/cafe-shot-4.jpg",
-    "badge": "04 / 08 · 베이커리 (Bakery)",
-    "phase": "온실 치유 카페 04",
+    "num": "4",
+    "badge": "4. 베이커리",
+    "phase": "4번 자료",
     "theme": "참나무 화덕 천연 발효 베이커리",
     "title": "오픈 키친 화덕 오븐에서 갓 구워낸 따끈한 천연 발효빵",
     "desc": "따뜻한 조명이 깃든 베이커리 코너에서 제빵사가 참나무 화덕 오븐에서 황금빛으로 구워진 빵을 꺼냅니다. 옆 시식 코너에서는 엄마와 아이가 갓 구운 빵 조각을 맛보며 행복한 미소를 나눕니다.",
@@ -1062,9 +1040,10 @@
   {
     "idx": 4,
     "img": "assets/images/cafe-shot-5.jpg",
-    "badge": "05 / 08 · 서빙 로봇 (Robot waiter)",
-    "phase": "스마트 서비스 05",
-    "theme": "귀여운 자율주행 서빙 로봇 BERRY",
+    "num": "5",
+    "badge": "5. 서빙 로봇",
+    "phase": "5번 자료",
+    "theme": "귀여운 자율주행 서빙 로봇 Berry",
     "title": "테이블 사이를 부드럽게 누비며 커피를 배달하는 로봇 'Berry'",
     "desc": "디지털 스크린에 귀여운 표정을 지으며 향긋한 커피와 빵을 실어 나르는 자율주행 서빙 로봇. 온실 통로를 유연하게 주행하며 손님들에게 안전하고 신기한 스마트 온실의 미래를 선보입니다.",
     "tag": "#자율주행서빙로봇 · #스마트온실카페 · #친근한AI기술"
@@ -1072,8 +1051,9 @@
   {
     "idx": 5,
     "img": "assets/images/cafe-shot-6.jpg",
-    "badge": "06 / 08 · 세대 상생 (Coexistence)",
-    "phase": "세대 상생 모델 06",
+    "num": "6",
+    "badge": "6. 세대 상생",
+    "phase": "6번 자료",
     "theme": "시니어 어르신과 청년 농부의 동행",
     "title": "스마트 수직 타워에서 함께 허브를 가꾸는 세대 통합 일자리",
     "desc": "따스한 온실 햇살 아래, 모자를 쓰신 시니어 어르신과 청년 농부가 푸른 버티컬 타워를 사이에 두고 함께 바질을 손질합니다. 연륜과 청년의 스마트 기술이 어우러져 세대 갈등을 녹이고 지속가능한 일자리를 만듭니다.",
@@ -1082,8 +1062,9 @@
   {
     "idx": 6,
     "img": "assets/images/cafe-shot-7.jpg",
-    "badge": "07 / 08 · 로컬 마켓 (Local market)",
-    "phase": "로컬 상생 마켓 07",
+    "num": "7",
+    "badge": "7. 로컬 마켓",
+    "phase": "7번 자료",
     "theme": "양평 청정 유기농 직판 파머스마켓",
     "title": "흙내음 가득한 당일 수확 채소와 특산품 직거래 마켓",
     "desc": "온실 카페 한 켠에 마련된 로컬 상생 마켓 부스. 크라프트 바구니에 담긴 양평 농가의 친환경 유기농 채소, 과일, 천연 잼을 손님들이 장바구니에 담으며 지역 농가와 소비자가 따뜻한 온기를 나눕니다.",
@@ -1092,8 +1073,9 @@
   {
     "idx": 7,
     "img": "assets/images/cafe-shot-8.jpg",
-    "badge": "08 / 08 · 대파노라마 (Panorama)",
-    "phase": "미래 랜드마크 08",
+    "num": "8",
+    "badge": "8. 대파노라마",
+    "phase": "8번 자료",
     "theme": "사계절 녹색 생명과 사람이 공존하는 대온실",
     "title": "높은 아치형 유리 천장 아래 펼쳐진 스마트 생태 지상락원",
     "desc": "웅장한 유리 온실 전체가 한눈에 들어오는 대파노라마. 유리 천장을 통해 비치는 찬란한 자연광, 층층이 늘어선 수경재배 타워의 녹색 숲, 커피와 담소를 나누는 사람들, 그 사이를 오가는 서빙 로봇이 어우러진 미래 지상천국의 완성형 모델입니다.",
@@ -1146,21 +1128,18 @@
       }
     });
 
-    // Update Thumbnail Buttons
+    // Update Number Buttons (1 to 8)
     thumbBtns.forEach((btn, idx) => {
-      const dotSpan = btn.querySelector('span:first-child');
       if (idx === currentCafeSlide) {
-        btn.className = 'cafe-thumb-btn shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-[11.5px] font-semibold transition-all bg-[#0F4A36] text-[#FFF8E7] border-[#0F4A36] shadow-sm';
-        if (dotSpan) dotSpan.className = 'w-1.5 h-1.5 rounded-full bg-[#ECC76A]';
+        btn.className = 'cafe-thumb-btn flex-1 py-1.5 sm:py-2 rounded-xl border text-[13px] sm:text-[14px] font-bold transition-all flex items-center justify-center bg-[#0F4A36] text-[#FFF8E7] border-[#0F4A36] shadow-sm';
       } else {
-        btn.className = 'cafe-thumb-btn shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-[11.5px] font-semibold transition-all bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]';
-        if (dotSpan) dotSpan.className = 'w-1.5 h-1.5 rounded-full bg-[#0F4A36]/40';
+        btn.className = 'cafe-thumb-btn flex-1 py-1.5 sm:py-2 rounded-xl border text-[13px] sm:text-[14px] font-bold transition-all flex items-center justify-center bg-white text-[#42594F] border-[#0F4A36]/15 hover:bg-[#F4F8F5]';
       }
     });
 
     const currentData = cafeSlideData[currentCafeSlide];
     if (badgeEl && currentData) {
-      badgeEl.textContent = (currentCafeSlide + 1).toString().padStart(2, '0') + ' / 08';
+      badgeEl.textContent = (currentCafeSlide + 1) + ' / 8';
     }
 
     // Update text card with gentle fade
